@@ -1,0 +1,7 @@
+index:
+    path:     /
+    defaults: { _controller: NbGraphicsCoreBundle:Default:index }
+
+order:
+    path:   /
+    defaults: {_controller: NbGraphicsCoreBundle:Order:number}
