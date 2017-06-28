@@ -2,7 +2,6 @@
 
 {% block body %}
     </div>
-    {% for form in forms %}
         
         <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
         <div class="form-wrap">
@@ -10,7 +9,7 @@
                 
                 <div class="tab-content">
                     <div class="tab-content-inner active" data-content="signup">
-                        <h3>Billet n°{{ loop.index }} </h3>
+                        <h3>Billet </h3>
                         
                         {{ form_start(form, {'attr': {'class': '', 'role': 'form'}}) }}
     
@@ -26,29 +25,26 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                {{ form_row(form.birthday, {'label': 'Anniversaire'}) }}
+                                {{ form_row(form.email, {'label': 'Email'}) }}
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                {{ form_row(form.country, {'label': 'Pays'}) }}
+                                {{ form_widget(form.tickets) }}
                             </div>
                         </div>
-                        {% if loop.index == loop.last %}
                         <div class="row form-group">
                             <div class="col-md-4 col-md-push-4">
-                                {{ form_row(form.suivant) }}
+                                {{ form_row(form.Suivant) }}
                             </div>
                         </div>
-                            {% endif %}
-                        {{  form_end(form, {'render_rest': false}) }}
+                        {{  form_end(form) }}
                     
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% endfor %}
     
     </div>
     

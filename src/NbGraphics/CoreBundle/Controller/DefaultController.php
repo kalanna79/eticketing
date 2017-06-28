@@ -9,6 +9,8 @@ use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Session\Session;
+
 
 
 class DefaultController extends Controller
@@ -16,8 +18,8 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         $session = $request->getSession();
-        $basket = new Basket();
-        
+        $nbBillets = array('NbBillets' => 'Nombre de billets');
+        $session->set('nombre',$nbBillets);
         $form3 = $this->get('form.factory')->createBuilder(FormType::class)
             ->add('choiceNb', ChoiceType::class, array(
                 'choices' => array(
@@ -25,7 +27,7 @@ class DefaultController extends Controller
                     'accompagné de ' => '2'),
                 'expanded' => true,
             ))
-            ->add('NbBillet', ChoiceType::class, array(
+            ->add('NbBillets', ChoiceType::class, array(
                 'choices'=>array(
                     '1 personne' => '2',
                     '2 personnes' => '3',
@@ -46,12 +48,13 @@ class DefaultController extends Controller
             if ($form3->isValid())
             {
                 $em = $this->getDoctrine()->getManager();
-                if ($orderline->getChoiceNb() == 1)
+                $data = $form3->getData();
+                
+                if ($data['choiceNb'] == 1)
                 {
-                    $orderline->setNbBillet(1);
+                    $data['NbBillets'] = 1;
                 }
-                $em->persist($orderline);
-                $session->set('nombre', $orderline->getNbBillet());
+                $session->set('nombre', $data['NbBillets']);
             
                 dump($session->get('nombre'));
                 return $this->redirectToRoute('order');

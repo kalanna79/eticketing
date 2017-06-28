@@ -30,7 +30,14 @@ class TicketType extends AbstractType
                         'l\'après-midi' => "midday"
                     )
                 ))
-                ->add('price',      NumberType::class);
+                ->add('price',      ChoiceType::class, array(
+                    'choices' => array(
+                        'Tarif Normal' => '16',
+                        'Tarif Enfant' => '8',
+                        'Tarif Senior'  => '12',
+                        'Tarif Réduit' =>'10',
+                    )
+                ));
     }
     
     /**

@@ -22,9 +22,7 @@ class BasketType extends AbstractType
             ->add('name',       TextType::class)
             ->add('email',      EmailType::class)
             ->add('tickets',    CollectionType::class, array(
-                                            'entry_type' => TicketType::class,
-                                            'allow_add' => true,
-                                            'allow_delete' => true
+                'entry_type' => TicketType::class,
             ))
             ->add('Suivant',    SubmitType::class);
     }
@@ -35,7 +33,7 @@ class BasketType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'NbGraphics\CoreBundle\Entity\Basket'
+            'data_class' => 'NbGraphics\CoreBundle\Entity\Basket',
         ));
     }
 

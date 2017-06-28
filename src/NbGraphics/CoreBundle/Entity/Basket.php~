@@ -14,7 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Basket
 {
     /**
-     * @ORM\OneToMany(targetEntity="NbGraphics\CoreBundle\Entity\Ticket", mappedBy="basket", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="NbGraphics\CoreBundle\Entity\Ticket", mappedBy="ticket")
      */
     private $tickets;
     
