@@ -2,15 +2,151 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a17605c4-b46e-4c33-97f6-378e8e3171ee" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Pricing.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/animate.css" afterPath="$PROJECT_DIR$/web/assets/css/animate.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/bg.css" afterPath="$PROJECT_DIR$/web/assets/css/bg.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/bootstrap-datepicker.min.css" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap-datepicker.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/flexslider.css" afterPath="$PROJECT_DIR$/web/assets/css/flexslider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/icomoon.css" afterPath="$PROJECT_DIR$/web/assets/css/icomoon.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/magnific-popup.css" afterPath="$PROJECT_DIR$/web/assets/css/magnific-popup.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/owl.carousel.min.css" afterPath="$PROJECT_DIR$/web/assets/css/owl.carousel.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/owl.theme.default.min.css" afterPath="$PROJECT_DIR$/web/assets/css/owl.theme.default.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/style.css" afterPath="$PROJECT_DIR$/web/assets/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/style.css.map" afterPath="$PROJECT_DIR$/web/assets/css/style.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/css/themify-icons.css" afterPath="$PROJECT_DIR$/web/assets/css/themify-icons.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/web/assets/fonts/bootstrap/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/web/assets/fonts/bootstrap/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/web/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/web/assets/fonts/bootstrap/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/web/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/icomoon/icomoon.eot" afterPath="$PROJECT_DIR$/web/assets/fonts/icomoon/icomoon.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/icomoon/icomoon.svg" afterPath="$PROJECT_DIR$/web/assets/fonts/icomoon/icomoon.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/icomoon/icomoon.ttf" afterPath="$PROJECT_DIR$/web/assets/fonts/icomoon/icomoon.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/icomoon/icomoon.woff" afterPath="$PROJECT_DIR$/web/assets/fonts/icomoon/icomoon.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/themify-icons/themify.eot" afterPath="$PROJECT_DIR$/web/assets/fonts/themify-icons/themify.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/themify-icons/themify.svg" afterPath="$PROJECT_DIR$/web/assets/fonts/themify-icons/themify.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/themify-icons/themify.ttf" afterPath="$PROJECT_DIR$/web/assets/fonts/themify-icons/themify.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/fonts/themify-icons/themify.woff" afterPath="$PROJECT_DIR$/web/assets/fonts/themify-icons/themify.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_1.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_2.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_3.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_4.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_5.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_6.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_bg_1.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_bg_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_bg_2.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_bg_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/img_bg_3.jpg" afterPath="$PROJECT_DIR$/web/assets/images/img_bg_3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/loader.gif" afterPath="$PROJECT_DIR$/web/assets/images/loader.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/louvre-320.jpg" afterPath="$PROJECT_DIR$/web/assets/images/louvre-320.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/louvre-640.jpg" afterPath="$PROJECT_DIR$/web/assets/images/louvre-640.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/louvre-760.jpg" afterPath="$PROJECT_DIR$/web/assets/images/louvre-760.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/louvre1280.jpg" afterPath="$PROJECT_DIR$/web/assets/images/louvre1280.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/louvre2-1920.jpg" afterPath="$PROJECT_DIR$/web/assets/images/louvre2-1920.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/images/paris_1920.jpg" afterPath="$PROJECT_DIR$/web/assets/images/paris_1920.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/bg.js" afterPath="$PROJECT_DIR$/web/assets/js/bg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/bootstrap-datepicker.min.js" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap-datepicker.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/web/assets/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/google_map.js" afterPath="$PROJECT_DIR$/web/assets/js/google_map.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/jquery.countTo.js" afterPath="$PROJECT_DIR$/web/assets/js/jquery.countTo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/jquery.easing.1.3.js" afterPath="$PROJECT_DIR$/web/assets/js/jquery.easing.1.3.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/jquery.easypiechart.min.js" afterPath="$PROJECT_DIR$/web/assets/js/jquery.easypiechart.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/jquery.magnific-popup.min.js" afterPath="$PROJECT_DIR$/web/assets/js/jquery.magnific-popup.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/jquery.min.js" afterPath="$PROJECT_DIR$/web/assets/js/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/jquery.stellar.min.js" afterPath="$PROJECT_DIR$/web/assets/js/jquery.stellar.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/jquery.waypoints.min.js" afterPath="$PROJECT_DIR$/web/assets/js/jquery.waypoints.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/magnific-popup-options.js" afterPath="$PROJECT_DIR$/web/assets/js/magnific-popup-options.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/main.js" afterPath="$PROJECT_DIR$/web/assets/js/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/modernizr-2.6.2.min.js" afterPath="$PROJECT_DIR$/web/assets/js/modernizr-2.6.2.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/owl.carousel.min.js" afterPath="$PROJECT_DIR$/web/assets/js/owl.carousel.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/js/respond.min.js" afterPath="$PROJECT_DIR$/web/assets/js/respond.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/_bootstrap-compass.scss" afterPath="$PROJECT_DIR$/web/assets/sass/_bootstrap-compass.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/_bootstrap-mincer.scss" afterPath="$PROJECT_DIR$/web/assets/sass/_bootstrap-mincer.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/_bootstrap-sprockets.scss" afterPath="$PROJECT_DIR$/web/assets/sass/_bootstrap-sprockets.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_alerts.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_alerts.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_badges.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_badges.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_breadcrumbs.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_breadcrumbs.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_button-groups.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_button-groups.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_buttons.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_buttons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_carousel.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_carousel.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_close.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_close.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_code.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_code.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_component-animations.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_component-animations.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_dropdowns.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_dropdowns.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_forms.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_forms.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_glyphicons.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_glyphicons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_grid.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_grid.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_input-groups.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_input-groups.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_jumbotron.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_jumbotron.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_labels.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_labels.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_list-group.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_list-group.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_media.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_media.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_mixins.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_mixins.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_modals.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_modals.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_navbar.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_navbar.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_navs.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_navs.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_normalize.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_normalize.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_pager.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_pager.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_pagination.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_pagination.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_panels.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_panels.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_popovers.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_popovers.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_print.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_print.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_progress-bars.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_progress-bars.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_responsive-embed.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_responsive-embed.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_responsive-utilities.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_responsive-utilities.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_scaffolding.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_scaffolding.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_tables.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_tables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_theme.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_theme.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_thumbnails.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_thumbnails.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_tooltip.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_tooltip.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_type.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_type.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_utilities.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_utilities.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/_wells.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/_wells.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_alerts.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_alerts.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_background-variant.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_border-radius.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_border-radius.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_buttons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_center-block.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_center-block.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_clearfix.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_clearfix.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_forms.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_forms.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_gradients.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_gradients.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_grid-framework.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_grid-framework.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_grid.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_grid.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_hide-text.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_hide-text.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_image.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_image.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_labels.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_labels.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_list-group.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_list-group.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_nav-divider.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_nav-divider.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_nav-vertical-align.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_nav-vertical-align.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_opacity.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_opacity.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_pagination.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_pagination.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_panels.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_panels.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_progress-bar.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_progress-bar.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_reset-filter.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_reset-filter.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_reset-text.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_reset-text.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_resize.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_resize.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_responsive-visibility.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_responsive-visibility.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_size.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_size.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_tab-focus.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_tab-focus.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_table-row.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_table-row.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_text-emphasis.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_text-emphasis.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_text-overflow.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_text-overflow.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/bootstrap/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/web/assets/sass/bootstrap/mixins/_vendor-prefixes.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/assets/sass/style.scss" afterPath="$PROJECT_DIR$/web/assets/sass/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/BasketType.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/BasketType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/TicketType.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/TicketType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +162,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OrderController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            <state relative-caret-position="244">
+              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
                 <element signature="e#52#92#0#PHP" expanded="true" />
               </folding>
@@ -38,15 +174,85 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Basket.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding>
+                <element signature="e#48#96#0#PHP" expanded="true" />
+                <element signature="e#326#451#0#PHP" expanded="false" />
+                <element signature="e#483#622#0#PHP" expanded="false" />
+                <element signature="e#645#746#0#PHP" expanded="false" />
+                <element signature="e#776#872#0#PHP" expanded="false" />
+                <element signature="e#897#994#0#PHP" expanded="false" />
+                <element signature="e#1020#1118#0#PHP" expanded="false" />
+                <element signature="e#1145#1253#0#PHP" expanded="false" />
+                <element signature="e#1283#1313#0#PHP" expanded="false" />
+                <element signature="e#1347#1377#0#PHP" expanded="false" />
+                <element signature="e#1739#1839#0#PHP" expanded="false" />
+                <element signature="e#1964#2025#0#PHP" expanded="false" />
+                <element signature="e#2111#2201#0#PHP" expanded="false" />
+                <element signature="e#2306#2362#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pricing.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Pricing.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+              <folding>
+                <element signature="e#15#118#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Booking.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+              <folding>
+                <element signature="e#170#206#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="64" column="46" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="64" selection-end-column="46" />
+              <folding>
+                <element signature="e#52#92#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Ticket.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="90">
+              <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
                 <element signature="e#595#696#0#PHP" expanded="false" />
                 <element signature="e#726#822#0#PHP" expanded="false" />
-                <element signature="e#847#940#0#PHP" expanded="false" />
                 <element signature="e#969#1068#0#PHP" expanded="false" />
                 <element signature="e#1096#1190#0#PHP" expanded="false" />
                 <element signature="e#1220#1306#0#PHP" expanded="false" />
@@ -56,39 +262,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasketType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/BasketType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-              <folding>
-                <element signature="e#46#86#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Basket.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-              <folding>
-                <element signature="e#48#96#0#PHP" expanded="true" />
-                <element signature="e#1659#1759#0#PHP" expanded="false" />
-                <element signature="e#1884#1945#0#PHP" expanded="false" />
-                <element signature="e#2031#2121#0#PHP" expanded="false" />
-                <element signature="e#2226#2282#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TicketType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/TicketType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+            <state relative-caret-position="405">
+              <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
               <folding>
                 <element signature="e#46#86#0#PHP" expanded="true" />
               </folding>
@@ -96,12 +274,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig">
+      <file leaf-file-name="recap.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+            <state relative-caret-position="240">
+              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecapController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="19" column="70" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="70" />
+              <folding>
+                <element signature="e#181#238#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +309,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>orderline</find>
+      <find>datesD</find>
+      <find>datesDisa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,13 +319,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/CoreBundle/Resources/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/app/Resources/translations/messages.en.yml" />
-        <option value="$PROJECT_DIR$/web/assets/css/additive.css" />
-        <option value="$PROJECT_DIR$/web/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/web/assets/js/jquery.ui.datepicker-fr.js" />
-        <option value="$PROJECT_DIR$/web/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/web/assets/js/datepicker-fr.js" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/views/Form/fields.html.twig" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Form/Type/NumberPax.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Form/Type/Accompagnying.php" />
@@ -152,12 +337,10 @@
         <option value="$PROJECT_DIR$/src/CoreBundle/Controller/NumberPaxController.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Controller/InvoiceController.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/views/Order/invoice.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Controller/CoreController.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/views/Order/numberpax.html.twig" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Resources/views/Order/order.html.twig" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Form/OrderType.php" />
         <option value="$PROJECT_DIR$/src/CoreBundle/Entity/Order.php" />
@@ -170,14 +353,23 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/TicketType.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/BasketType.php" />
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" />
+        <option value="$PROJECT_DIR$/web/assets/js/bootstrap-datepicker.min.js" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/TicketType.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Pricing.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php" />
       </list>
     </option>
   </component>
@@ -192,7 +384,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="46" />
+    <option name="x" value="62" />
     <option name="y" value="23" />
     <option name="width" value="1275" />
     <option name="height" value="873" />
@@ -238,226 +430,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bridge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Twig" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bridge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Twig" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bridge" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eticketing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -481,6 +453,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NbGraphics" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Services" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,10 +545,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -604,7 +598,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,7 +624,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
+              <option name="myItemId" value="DependencyInjection" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -691,10 +685,6 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -709,18 +699,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order" />
       <recent name="$PROJECT_DIR$/web/assets" />
+      <recent name="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order" />
       <recent name="$PROJECT_DIR$/src/NbGraphics/UserBundle/Resources/views/Invoice" />
       <recent name="$PROJECT_DIR$/src/NbGraphics/UserBundle/Resources/views" />
       <recent name="$PROJECT_DIR$/src/CoreBundle/Form/Type" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order" />
       <recent name="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller" />
       <recent name="$PROJECT_DIR$/web/assets" />
       <recent name="$PROJECT_DIR$/src/CoreBundle/Controller" />
       <recent name="$PROJECT_DIR$/src/CoreBundle/Resources/views/Order" />
-      <recent name="$PROJECT_DIR$/src/NbGraphics/UserBundle/Controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -797,15 +787,15 @@
       <workItem from="1497362471615" duration="61503000" />
       <workItem from="1497956386575" duration="13607000" />
       <workItem from="1498032936455" duration="44573000" />
-      <workItem from="1498554559217" duration="35197000" />
+      <workItem from="1498554559217" duration="60119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154880000" />
+    <option name="totallyTimeSpent" value="179802000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="23" width="1275" height="873" extended-state="0" />
+    <frame x="62" y="23" width="1275" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26034063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -857,41 +847,8 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/assets/css/main.css" />
-    <entry file="file://$USER_HOME$/Downloads/traveler/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="191" column="1" lean-forward="false" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/datepicker-fr.js" />
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/views/Order/date.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/Type/MyButtonType.php" />
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/Type/Accompagnying.php" />
-    <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/NumberPersonsType.php" />
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/Type/NumberPax.php" />
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Form/Type/StepType.php" />
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/UserBundle/Resources/config/routing.yml" />
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/UserBundle/Controller/DefaultController.php" />
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/UserBundle/Controller/UserController.php" />
@@ -964,14 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreBundle/Controller/OrderController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1020,18 +969,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/assets/js/bg.js">
+    <entry file="file://$PROJECT_DIR$/web/assets/js/bg.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1044,37 +985,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="123" column="32" lean-forward="false" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding>
-            <element signature="e#52#92#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,32 +1001,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/BasketType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding>
+            <element signature="e#46#86#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27146">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/bootstrap-datepicker.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-990">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/bootstrap-datepicker.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="7" column="2853" lean-forward="false" selection-start-line="7" selection-start-column="2852" selection-end-line="7" selection-end-column="2853" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="82" lean-forward="false" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/TicketType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding>
             <element signature="e#46#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="149" column="17" lean-forward="false" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="70" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="70" />
+          <folding>
+            <element signature="e#181#238#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="90">
+          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
             <element signature="e#595#696#0#PHP" expanded="false" />
             <element signature="e#726#822#0#PHP" expanded="false" />
-            <element signature="e#847#940#0#PHP" expanded="false" />
             <element signature="e#969#1068#0#PHP" expanded="false" />
             <element signature="e#1096#1190#0#PHP" expanded="false" />
             <element signature="e#1220#1306#0#PHP" expanded="false" />
@@ -1120,36 +1128,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/TicketType.php">
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Pricing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="675">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
-            <element signature="e#46#86#0#PHP" expanded="true" />
+            <element signature="e#15#118#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="64" column="46" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="64" selection-end-column="46" />
+          <folding>
+            <element signature="e#52#92#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#48#96#0#PHP" expanded="true" />
-            <element signature="e#1659#1759#0#PHP" expanded="false" />
-            <element signature="e#1884#1945#0#PHP" expanded="false" />
-            <element signature="e#2031#2121#0#PHP" expanded="false" />
-            <element signature="e#2226#2282#0#PHP" expanded="false" />
+            <element signature="e#326#451#0#PHP" expanded="false" />
+            <element signature="e#483#622#0#PHP" expanded="false" />
+            <element signature="e#645#746#0#PHP" expanded="false" />
+            <element signature="e#776#872#0#PHP" expanded="false" />
+            <element signature="e#897#994#0#PHP" expanded="false" />
+            <element signature="e#1020#1118#0#PHP" expanded="false" />
+            <element signature="e#1145#1253#0#PHP" expanded="false" />
+            <element signature="e#1283#1313#0#PHP" expanded="false" />
+            <element signature="e#1347#1377#0#PHP" expanded="false" />
+            <element signature="e#1739#1839#0#PHP" expanded="false" />
+            <element signature="e#1964#2025#0#PHP" expanded="false" />
+            <element signature="e#2111#2201#0#PHP" expanded="false" />
+            <element signature="e#2306#2362#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="244">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
             <element signature="e#52#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+          <folding>
+            <element signature="e#170#206#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
