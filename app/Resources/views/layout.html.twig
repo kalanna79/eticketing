@@ -113,10 +113,44 @@
 
     <!-- Datepicker -->
     <script src="{{ asset('assets/js/bootstrap-datepicker.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var closeDays = [
+                '14-07-2017',
+                '01-11-2017',
+                '11-11-2017',
+                '25-12-2017',
+                '01-01-2018',
+                '01-05-2018',
+                '08-05-2018',
+            ];
+            
+            var closeDays = ['14-07-2017'];
+            {% set MyArray = ['01-11-2017','11-11-2017'] %}
+            {% for number in MyArray %}
+                closeDays.push('{{ number }}');
+            {% endfor %}
+            
+            $('.js-datepicker').datepicker({
+                startDate: new Date(),
+                format: 'dd-mm-yyyy',
+                daysOfWeekDisabled:[2,0],
+                datesDisabled: closeDays,
+                weekStart: 1
+            });
 
-
+            $('.js2-datepicker').datepicker({
+                startDate: new Date(),
+                format: 'dd-mm-yyyy',
+                weekStart: 1
+            });
+        })
+    
+    </script>
     <!-- Main -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
+                                
+                                
 
 </body>
 </html>

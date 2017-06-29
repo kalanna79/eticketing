@@ -21,21 +21,23 @@ class TicketType extends AbstractType
     {
         $builder->add('firstname',  TextType::class)
                 ->add('name',       TextType::class)
-                ->add('birthday',   DateType::class)
+                ->add('birthday',   DateType::class, array(
+                    'widget' => 'single_text',
+                    'format' => 'dd-MM-yyyy',
+                ))
                 ->add('country',    CountryType::class)
-                ->add('visitdate',  DateType::class)
+                ->add('visitdate',  DateType::class, array(
+                    'widget' => 'single_text',
+                    'format' => 'dd-MM-yyyy',
+                    'attr'   =>  array(
+                        'class'   => 'js-datepicker',
+                        'id'      => 'visit'),
+                    'html5' => false,
+                ))
                 ->add('duration',   ChoiceType::class, array(
                     'choices' => array(
                         'toute la journée' => 'allday',
                         'l\'après-midi' => "midday"
-                    )
-                ))
-                ->add('price',      ChoiceType::class, array(
-                    'choices' => array(
-                        'Tarif Normal' => '16',
-                        'Tarif Enfant' => '8',
-                        'Tarif Senior'  => '12',
-                        'Tarif Réduit' =>'10',
                     )
                 ));
     }

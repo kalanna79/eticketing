@@ -3,19 +3,18 @@
 {% block body %}
     </div>
         
-        <div class="col-md-5 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-        <div class="form-wrap ">
+        <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+        <div class="form-wrap">
             <div class="tab">
                 
                 <div class="tab-content">
                     <div class="tab-content-inner active" data-content="signup">
-                        <h3>Billet </h3>
+                        <h3>Récapitulatif de votre commande </h3>
                         
-                        {{ form_start(form, {'attr': {'class': '', 'role': 'form'}}) }}
     
                         <div class="row form-group">
                             <div class="col-md-12">
-                                {{ form_row(form.name, {'label': 'Nom'}) }}
+                                
                             </div>
                         </div>
                         <div class="row form-group">
@@ -30,7 +29,7 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                {{ form_row(form.tickets, {'label': 'Billets'}) }}
+                                {{ form_widget(form.tickets) }}
                             </div>
                         </div>
                         <div class="row form-group">

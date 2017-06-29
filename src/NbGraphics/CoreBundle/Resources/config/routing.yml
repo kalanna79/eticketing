@@ -5,3 +5,7 @@ index:
 order:
     path:   /order
     defaults: { _controller: NbGraphicsCoreBundle:Order:order }
+
+recap:
+    path:   /recap
+    defaults: { _controller: NbGraphicsCoreBundle:Order:recap }

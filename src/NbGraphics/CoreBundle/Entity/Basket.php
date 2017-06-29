@@ -4,6 +4,7 @@ namespace NbGraphics\CoreBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use  NbGraphics\CoreBundle\Entity\Ticket;
 
 /**
  * Basket
@@ -67,7 +68,6 @@ class Basket
      */
     private $NbBillets;
     
-    
     /**
      * @var number
      */
@@ -80,6 +80,8 @@ class Basket
     {
         $this->tickets = new ArrayCollection();
         $this->total = 0;
+        $this->setStatus('en cours');
+    
     }
     /**
      * Get id
@@ -276,5 +278,14 @@ class Basket
         $this->tickets->remove($ticket);
     }
     
-    
+    public function createTickets($NbBillets)
+    {
+        
+        for ($i = 1; $i <= $NbBillets; $i++)
+        {
+            $ticket[$i] = new Ticket(); //à la place un ticket déjà créé par le service
+            $ticket[$i]->setBasket($this);
+            $this->addTicket($ticket[$i]);
+        }
+    }
 }
