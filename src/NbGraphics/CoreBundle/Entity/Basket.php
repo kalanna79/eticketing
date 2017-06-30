@@ -63,15 +63,6 @@ class Basket
      */
     private $total;
     
-    /**
-     * @var number
-     */
-    private $NbBillets;
-    
-    /**
-     * @var number
-     */
-    private $choiceNb;
     
     /**
      * Basket constructor.
@@ -79,9 +70,7 @@ class Basket
     public function __construct()
     {
         $this->tickets = new ArrayCollection();
-        $this->total = 0;
         $this->setStatus('en cours');
-    
     }
     /**
      * Get id
@@ -239,53 +228,34 @@ class Basket
     }
     
     /**
-     * @param mixed $NbBillets
+     * Add a new ticket in basket
+     * @param \NbGraphics\CoreBundle\Entity\Ticket $ticket
      */
-    public function setNbBillets($NbBillets)
-    {
-        $this->NbBillets = $NbBillets;
-    }
-    
-    /**
-     * @return mixed
-     */
-    public function getNbBillets()
-    {
-        return $this->NbBillets;
-    }
-    
-    /**
-     * @param number $choiceNb
-     */
-    public function setChoiceNb($choiceNb)
-    {
-        $this->choiceNb = $choiceNb;
-    }
-    
-    public function getChoiceNb()
-    {
-        return $this->choiceNb;
-    }
-    
-   
     public function addTicket(Ticket $ticket)
     {
         $this->tickets->add($ticket);
     }
     
+    /**
+     * Remove a ticket from basket
+     * @param \NbGraphics\CoreBundle\Entity\Ticket $ticket
+     */
     public function removeTicket(Ticket $ticket)
     {
         $this->tickets->remove($ticket);
     }
     
-    public function createTickets($NbBillets)
+    /**
+     * Allow to construct the array of tickets in basket
+     * @param $tickets
+     */
+    public function createTickets($tickets)
     {
         
-        for ($i = 1; $i <= $NbBillets; $i++)
+        foreach ($tickets as $ticket)
         {
-            $ticket[$i] = new Ticket(); //à la place un ticket déjà créé par le service
-            $ticket[$i]->setBasket($this);
-            $this->addTicket($ticket[$i]);
+            $ticket->setBasket($this);
+            $this->addTicket($ticket);
         }
     }
 }

@@ -40,6 +40,9 @@
                 case $age >= 60:
                     $price = 12;
                     break;
+                case $reduction:
+                    $price = 10;
+                    break;
                 default:
                     $price = 16;
                     break;
@@ -49,8 +52,6 @@
         
         public function HowOld($birthday, $visitdate)
         {
-            $birthday = \DateTime::createFromFormat('j-m-Y', $birthday);
-            $visitdate = \DateTime::createFromFormat('j-m-Y', $visitdate);
             $diff = date_diff($visitdate, $birthday);
             $age = $diff->format('%Y');
             return $age;

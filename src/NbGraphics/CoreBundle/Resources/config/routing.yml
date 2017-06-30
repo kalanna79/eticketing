@@ -8,4 +8,4 @@ order:
 
 recap:
     path:   /recap
-    defaults: { _controller: NbGraphicsCoreBundle:Order:recap }
+    defaults: { _controller: NbGraphicsCoreBundle:Recap:recap }

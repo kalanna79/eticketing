@@ -2,13 +2,10 @@
 
 namespace NbGraphics\CoreBundle\Controller;
 
-use NbGraphics\CoreBundle\Entity\Basket;
-use NbGraphics\CoreBundle\Entity\Ticket;
-use Symfony\Component\Validator\Constraints\DateTime;
-use NbGraphics\CoreBundle\Form\BasketType;
-use NbGraphics\CoreBundle\Form\TicketType;
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Form;
 
 class OrderController extends Controller
 {
@@ -17,25 +14,13 @@ class OrderController extends Controller
     
         $session = $request->getSession();
         $nbBillets = $session->get('nombre');
-        $basket = $this->get('nb_graphics_core.booking')->setOrder($nbBillets);
-        if ($request->isMethod('POST'))
+        $basket = $this->get('nb_graphics_core.booking')->setOrder($nbBillets, $request);
+        if (!empty($basket))
         {
-            $basket->handleRequest($request);
-        
-            if ($basket->isSubmitted() && $basket->isValid())
-            {
-                $em = $this->getDoctrine()->getEntityManager();
-                $em->persist($basket);
-                $em->flush();
-            
-                return $basket;
-            }
-    
-    
+            return $this->redirectToRoute('recap');
         }
     
          return $this->render('NbGraphicsCoreBundle:Order:order.html.twig',  array(
-        'form' => $basket->createView()));;
-    
+        'form' => $basket->createView()));
     }
 }

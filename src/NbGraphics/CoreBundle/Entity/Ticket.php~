@@ -13,8 +13,8 @@ use Doctrine\ORM\Mapping as ORM;
 class Ticket
 {
     /**
-     * @ORM\ManyToOne(targetEntity="NbGraphics\CoreBundle\Entity\Basket", inversedBy="tickets")
-     * @ORM\JoinColumn(name="basket_id", referencedColumnName="id", nullable=false)
+     * @ORM\ManyToOne(targetEntity="Basket", inversedBy="tickets", cascade={"persist"})
+     * @ORM\JoinColumn(name="basket_id", referencedColumnName="id")
      */
     private $basket;
     
@@ -75,6 +75,12 @@ class Ticket
      * @ORM\Column(name="Price", type="decimal", precision=5, scale=2)
      */
     private $price;
+    
+    private $reduction;
+    
+    /**
+     * Ticket constructor.
+     */
 
     public function __construct()
     {
@@ -262,4 +268,28 @@ class Ticket
    
 
     
+
+    /**
+     * Set basket
+     *
+     * @param \NbGraphics\CoreBundle\Entity\Basket $basket
+     *
+     * @return Ticket
+     */
+    public function setBasket(\NbGraphics\CoreBundle\Entity\Basket $basket)
+    {
+        $this->basket = $basket;
+
+        return $this;
+    }
+
+    /**
+     * Get basket
+     *
+     * @return \NbGraphics\CoreBundle\Entity\Basket
+     */
+    public function getBasket()
+    {
+        return $this->basket;
+    }
 }

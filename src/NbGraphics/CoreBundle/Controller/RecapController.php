@@ -10,7 +10,11 @@
     
     
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Component\HttpFoundation\Request;
+
     use NbGraphics\CoreBundle\Entity\Basket;
+    use Symfony\Component\Form\Extension\Core\Type\FormType;
+    use Symfony\Component\Form\Form;
 
 
     class RecapController extends Controller
@@ -19,7 +23,7 @@
         {
             $pricing = $this->container->get('nb_graphics_core.pricing');
             
-            $basket = $request->getSession();
+            $basket = $request->getSession()->get;
             dump($basket); exit;
     
             return $this->render('NbGraphicsCoreBundle:Order:recap.html.twig');

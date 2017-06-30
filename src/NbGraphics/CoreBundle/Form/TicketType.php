@@ -4,6 +4,7 @@ namespace NbGraphics\CoreBundle\Form;
 
 use NbGraphics\CoreBundle\Entity\Ticket;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\CountryType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -39,6 +40,11 @@ class TicketType extends AbstractType
                         'toute la journée' => 'allday',
                         'l\'après-midi' => "midday"
                     )
+                ))
+                ->add('reduction', CheckboxType::class, array(
+                    'label' => 'Vous bénéficiez d\'un tarif réduit',
+                    'required' => false,
+                    'empty_data' => null
                 ));
     }
     

@@ -33,10 +33,8 @@ class DefaultController extends Controller
                     '2 personnes' => '3',
                     '3 personnes' => '4',
                     '4 personnes' => '5',
-            
                 )
             ))
-        
             ->add('suivant', SubmitType::class)
             ->getForm();
     

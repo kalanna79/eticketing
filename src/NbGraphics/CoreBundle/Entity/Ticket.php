@@ -75,6 +75,15 @@ class Ticket
      * @ORM\Column(name="Price", type="decimal", precision=5, scale=2)
      */
     private $price;
+    
+    /**
+     * @var boolean
+     */
+    private $reduction;
+    
+    /**
+     * Ticket constructor.
+     */
 
     public function __construct()
     {
@@ -238,7 +247,7 @@ class Ticket
     /**
      * Set price
      *
-     * @param string $price
+     * @param integer $price
      *
      * @return Ticket
      */
@@ -252,17 +261,14 @@ class Ticket
     /**
      * Get price
      *
-     * @return string
+     * @return integer
      */
     public function getPrice()
     {
         return $this->price;
     }
 
-   
-
     
-
     /**
      * Set basket
      *
@@ -285,5 +291,15 @@ class Ticket
     public function getBasket()
     {
         return $this->basket;
+    }
+    
+    public function setReduction($reduction)
+    {
+        $this->reduction = $reduction;
+    }
+    
+    public function getReduction()
+    {
+        return $this->reduction;
     }
 }
