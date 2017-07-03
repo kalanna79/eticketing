@@ -21,12 +21,17 @@
     {
         public function RecapAction(Request $request)
         {
-            $pricing = $this->container->get('nb_graphics_core.pricing');
+            $session = $request->getSession();
+            $repository = $this
+                ->getDoctrine()
+                ->getManager()
+                ->getRepository('NbGraphicsCoreBundle:Basket');
             
-            $basket = $request->getSession()->get;
-            dump($basket); exit;
-    
-            return $this->render('NbGraphicsCoreBundle:Order:recap.html.twig');
+            $order = $repository->find($session->get('panier'));
+            $amount = ($order->getTotal()*100);
+            $session->set('amount', $amount);
             
+            
+            return $this->render('NbGraphicsCoreBundle:Order:recap.html.twig', array('order' => $order));
         }
     }

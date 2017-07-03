@@ -4,15 +4,12 @@
     </div>
         
         <div class="col-md-5 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-        <div class="form-wrap">
             <div class="tab">
                 
                 <div class="tab-content">
                     <div class="tab-content-inner active" data-content="signup">
                         <h3>Récapitulatif de votre commande n° {{ order.id }}</h3>
-                        {% for message in app.flashes('notice') %}
-                        <div class="flash-notice">{{ message }} </div>
-                            {% endfor %}
+                        
                         <div class="row">
                             Vous désirez {{ order.tickets|length }} billets pour visiter le musée
                             {% for ticket in order.tickets %}
@@ -31,7 +28,8 @@
                         {% for ticket in order.tickets %}
                             <div class="row">
                                 <div class="col-md-6">N° :</div><div class="col-md-6">{{ ticket.code }}</div>
-                            <div class="col-md-6">Nom :</div><div class="col-md-6">{{ ticket.name }}</div>
+    
+                                <div class="col-md-6">Nom :</div><div class="col-md-6">{{ ticket.name }}</div>
                             <div class="col-md-6">Prénom :</div><div class="col-md-6">{{ ticket.firstname }}</div>
                             <div class="col-md-6">Date de naissance :</div><div class="col-md-5">{{ ticket
                                 .birthday|date('d-m-Y') }}</div>
@@ -46,33 +44,7 @@
                                 }} €</div>
                         </div>
                         {%  endfor %}
-                        <h4>Total à payer : {{ order.total }}€</h4>
-                        <form action="{{ path('checkout') }}" method="POST">
-        
-                            <script
-                                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                    data-key="pk_test_nrN0OVCuq2ZJ8YpHJLPBY2WL"
-                                    data-amount="{{ order.total * 100 }}"
-                                    data-name="BOUDETNATURE.COM"
-                                    data-description="Widget"
-                                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-                                    data-locale="auto"
-                                    data-zip-code="false"
-                                    data-currency="eur"
-                                    data-label="Paiement">
-
-                                    document.getElementById("button").addEventListener("click", function() {
-                                                            handler.open({
-                                                            image: '/square-image.png',
-                                                            name: 'Musée du Louvre',
-                                                            description: '2 widgets',
-                                                            amount: {{ order.total * 100 }}
-                                                            });
-                                                            });
-                                                            
-                            </script>
-    
-                        </form>
+                        <h4>Total : {{ order.total }}€</h4>
 
                     </div>
         </div>

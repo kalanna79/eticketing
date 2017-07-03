@@ -15,11 +15,11 @@ class OrderController extends Controller
         $session = $request->getSession();
         $nbBillets = $session->get('nombre');
         $basket = $this->get('nb_graphics_core.booking')->setOrder($nbBillets, $request);
-        if (!empty($basket))
+        if ($basket->isSubmitted() && $basket->isValid())
         {
             return $this->redirectToRoute('recap');
         }
-    
+        
          return $this->render('NbGraphicsCoreBundle:Order:order.html.twig',  array(
         'form' => $basket->createView()));
     }

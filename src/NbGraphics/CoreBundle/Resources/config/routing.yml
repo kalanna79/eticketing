@@ -9,3 +9,15 @@ order:
 recap:
     path:   /recap
     defaults: { _controller: NbGraphicsCoreBundle:Recap:recap }
+
+prepare:
+    path:   /prepare
+    defaults: { _controller: NbGraphicsCoreBundle:Payment:prepare }
+
+checkout:
+    path:   /checkout
+    defaults: { _controller: NbGraphicsCoreBundle:Payment:checkout }
+
+confirmation:
+    path:   /confirmation
+    defaults: { _controller: NbGraphicsCoreBundle:Payment:sendTicket }

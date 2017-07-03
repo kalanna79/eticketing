@@ -10,4 +10,5 @@ namespace NbGraphics\CoreBundle\Repository;
  */
 class BasketRepository extends \Doctrine\ORM\EntityRepository
 {
+    
 }

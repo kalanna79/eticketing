@@ -1,11 +1,10 @@
 services:
     _defaults:
-        autowire: true
+        autowire: false
         autoconfigure: true
         public: true
-#    nb_graphics_core.example:
-#        class: NbGraphics\CoreBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+
     nb_graphics_core.pricing:
         class: NbGraphics\CoreBundle\Services\Pricing
 
@@ -13,6 +12,15 @@ services:
         class: NbGraphics\CoreBundle\Services\Booking
         arguments:
             - "@nb_graphics_core.pricing"
+            - "@form.factory"
+            - "@doctrine.orm.entity_manager"
+    nb_graphics_core.payment:
+        class: NbGraphics\CoreBundle\Services\Payment
+        arguments:
+            - "@nb_graphics_core.booking"
+            - "@doctrine.orm.entity_manager"
+            - "@mailer"
+            - "@templating"
 
 
 

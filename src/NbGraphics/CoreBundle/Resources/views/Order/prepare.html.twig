@@ -1,0 +1,37 @@
+{% extends "::layout.html.twig" %}
+
+{% block body %}
+    </div>
+    
+    <div class="col-md-5 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+        <div class="form-wrap">
+            <div class="tab">
+                
+                <div class="tab-content">
+                    <div class="tab-content-inner active" data-content="signup">
+                        <h3>Paiement</h3>
+                        {% if basket.status == "succeeded" %}
+                            <div class="message"><h4>Merci de votre commande !</h4>
+                                Votre paiement a été accepté, vous recevrez très prochainement vos
+                                             billets sur l'adresse mail indiquée.  </div>
+                            {%  else %}
+                                <div class="message">Votre paiement a été refusé</div>
+                            {% endif %}
+                        <div class="row">
+                            <div class="row">
+                            
+                            <a href="{{ path('index') }}">Retour à l'accueil</a>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    
+    
+    </div>
+    </div>
+    </div>
+    </header>
+{%  endblock %}

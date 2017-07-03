@@ -57,9 +57,9 @@ class Basket
     private $status;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="total", type="decimal", precision=5, scale=2)
+     * @ORM\Column(name="total", type="integer")
      */
     private $total;
     
@@ -181,7 +181,7 @@ class Basket
     /**
      * Set total
      *
-     * @param string $total
+     * @param integer $total
      *
      * @return Basket
      */
@@ -196,7 +196,7 @@ class Basket
     /**
      * Get total
      *
-     * @return string
+     * @return integer
      */
     public function getTotal()
     {

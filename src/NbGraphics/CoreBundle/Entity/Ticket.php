@@ -82,12 +82,18 @@ class Ticket
     private $reduction;
     
     /**
+     * @var
+     */
+    private $code;
+    
+    /**
      * Ticket constructor.
      */
 
     public function __construct()
     {
         $this->visitdate = new \DateTime();
+        $this->setCode($this->generateCode());
     }
     
     /**
@@ -301,5 +307,23 @@ class Ticket
     public function getReduction()
     {
         return $this->reduction;
+    }
+    
+    public function setCode($code)
+    {
+        $this->code = $code;
+    }
+    
+    public function getCode()
+    {
+        return $this->code;
+    }
+    
+    public function generateCode()
+    {
+        $code = '';
+        for ($i=1;$i<=10;$i++)
+        {$code =+ chr(floor(rand(0, 25)+97));}
+        return $code;
     }
 }

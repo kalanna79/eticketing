@@ -14,7 +14,6 @@
 
     use Symfony\Component\Form\FormFactory;
     use NbGraphics\CoreBundle\Form\BasketType;
-    use NbGraphics\CoreBundle\Form\TicketType;
     use Doctrine\ORM\EntityManagerInterface;
     use Doctrine\ORM\EntityManager;
     
@@ -41,12 +40,16 @@
         }
     
         /**
+         * Allow to set order form with the right number of tickets and validate it
+         *
          * @param         $nbBillets
          * @param Request $request
          * @return \Symfony\Component\Form\FormInterface
          */
         public function setOrder($nbBillets, Request $request)
         {
+            $session = $request->getSession();
+    
             $tickets = $this->addTickets($nbBillets);
             $basket = new Basket();
             $basket->createTickets($tickets);
@@ -60,6 +63,8 @@
                 $this->Total($data);
                 $this->em->persist($data);
                 $this->em->flush();
+                $session->set('panier', $basket->getId());
+    
     
             }
             return $form;
