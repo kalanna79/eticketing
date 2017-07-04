@@ -37,8 +37,8 @@ class TicketType extends AbstractType
                 ))
                 ->add('duration',   ChoiceType::class, array(
                     'choices' => array(
-                        'toute la journée' => 'allday',
-                        'l\'après-midi' => "midday"
+                        'toute la journée' => '1',
+                        'l\'après-midi' => "2"
                     )
                 ))
                 ->add('reduction', CheckboxType::class, array(

@@ -31,7 +31,6 @@
             $amount = ($order->getTotal()*100);
             $session->set('amount', $amount);
             
-            
             return $this->render('NbGraphicsCoreBundle:Order:recap.html.twig', array('order' => $order));
         }
     }

@@ -16,7 +16,7 @@
          */
         public function OneTicketPrice($price, $duration)
         {
-            if ($duration == 'midday')
+            if ($duration == '2')
             {
                 $price = $price / 2;
                 return $price;

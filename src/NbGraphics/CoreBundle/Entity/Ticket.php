@@ -82,7 +82,9 @@ class Ticket
     private $reduction;
     
     /**
-     * @var
+     * @var string
+     *
+     * @ORM\Column(name="Code", type="string", length=25)
      */
     private $code;
     
@@ -312,6 +314,7 @@ class Ticket
     public function setCode($code)
     {
         $this->code = $code;
+        return $this;
     }
     
     public function getCode()
@@ -321,9 +324,12 @@ class Ticket
     
     public function generateCode()
     {
-        $code = '';
-        for ($i=1;$i<=10;$i++)
-        {$code =+ chr(floor(rand(0, 25)+97));}
+        $code = "";
+        $chaine = "abcdefghijklmnpqrstuvwxy1234567890";
+        for($i=0; $i<15; $i++) {
+            $code .= $chaine[rand()%strlen($chaine)];
+        }
         return $code;
     }
+    
 }
