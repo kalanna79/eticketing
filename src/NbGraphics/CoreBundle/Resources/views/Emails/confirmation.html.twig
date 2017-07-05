@@ -28,18 +28,16 @@
                         {% for ticket in order.tickets %}
                             <div class="row">
                                 <div class="col-md-6">N° :</div><div class="col-md-6">{{ ticket.code }}</div>
-    
                                 <div class="col-md-6">Nom :</div><div class="col-md-6">{{ ticket.name }}</div>
                             <div class="col-md-6">Prénom :</div><div class="col-md-6">{{ ticket.firstname }}</div>
-                            <div class="col-md-6">Date de naissance :</div><div class="col-md-5">{{ ticket
-                                .birthday|date('d-m-Y') }}</div>
-                            <div class="col-md-6">Pays :</div><div class="col-md-6">{{ ticket.country
-                                }}</div>
-                            <div class="col-md-6">Réduction :</div><div class="col-md-6">
-                            {% if ticket.reduction == true %} Oui<br>
-                            <em>Un justificatif vous sera demandé à l'entrée.</em>
-                                {% else %} Non
-                                    {% endif %}</div>
+                                <div class="col-md-6"> Date de visite :</div><div class="col-md-6">{{ ticket
+                                    .visitdate |date ('d-m-Y')}}
+                                    <div class="col-md-6">Durée :</div><div class="col-md-6">
+                                        {%  if ticket.duration == 1 %}
+                                            Journée
+                                            {% else %}
+                                                Demi-Journée (entrée à partir de 14 heures)
+                                                {% endif %}
                             <div class="col-md-6">Tarif</div><div class="col-md-6">{{ ticket.price
                                 }} €</div>
                         </div>

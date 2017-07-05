@@ -34,6 +34,7 @@ class BasketType extends AbstractType
     {
         $resolver->setDefaults(array(
             'data_class' => 'NbGraphics\CoreBundle\Entity\Basket',
+            'cascade_validation' => true
         ));
     }
 

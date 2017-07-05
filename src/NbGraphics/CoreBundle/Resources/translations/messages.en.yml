@@ -1,0 +1,39 @@
+titre: E-Ticketing
+sous_titre: Book your tickets with 3 clicks
+Nb_billets: Number of tickets
+Vous désirez: You want to come
+le: on
+aujourd'hui: today
+toute la journée: all day
+l'après-midi: in the afternoon from 2pm
+seul: alone
+accompagné de : with
+1 personne: 1 person
+Suivant: Next
+Nom: Name
+Prénom: Firstname
+Email: Email
+Billets: Tickets
+Date de la visite: Day of visit
+Durée: Duration
+Vous bénéficiez d'un tarif réduit: You get a reduced rate
+Date de naissance: Birthday
+Pays: Country
+0: Ticket n°1
+1: Ticket n°2
+your_order: Your order
+coordonnees: Your contact details
+sendTo: Tickets will be sent to this email upon confirmation of payment.
+tickname: Your nominal tickets:
+valable: Valid on %visitdate%
+reduction: Discount card:
+price: Price
+total: Total to pay %totalprice%
+paiement: Pay with card
+merci: Thank you for your order!
+accept: Your payment has been accepted, you will soon receive your tickets on the e-mail address indicated.
+back: Back to home
+toolate: It's too late to select a AllDay ticket
+
+
+

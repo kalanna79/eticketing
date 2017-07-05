@@ -4,7 +4,7 @@ namespace NbGraphics\CoreBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
-use  NbGraphics\CoreBundle\Entity\Ticket;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Basket
@@ -16,6 +16,7 @@ class Basket
 {
     /**
      * @ORM\OneToMany(targetEntity="NbGraphics\CoreBundle\Entity\Ticket", mappedBy="basket", cascade={"persist"})
+     * @Assert\Valid()
      */
     private $tickets;
     
@@ -32,6 +33,7 @@ class Basket
      * @var string
      *
      * @ORM\Column(name="firstname", type="string", length=255)
+     * @Assert\Length(min=3)
      */
     private $firstname;
 
@@ -39,6 +41,7 @@ class Basket
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     * @Assert\Length(min=3)
      */
     private $name;
 
@@ -46,6 +49,7 @@ class Basket
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255)
+     * @Assert\Email()
      */
     private $email;
 
@@ -60,6 +64,7 @@ class Basket
      * @var integer
      *
      * @ORM\Column(name="total", type="integer")
+     * @Assert\NotBlank()
      */
     private $total;
     

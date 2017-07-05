@@ -9,18 +9,19 @@
                 
                 <div class="tab-content">
                     <div class="tab-content-inner active" data-content="signup">
-                        <h3>Paiement</h3>
                         {% if basket.status == "succeeded" %}
-                            <div class="message"><h4>Merci de votre commande !</h4>
-                                Votre paiement a été accepté, vous recevrez très prochainement vos
-                                             billets sur l'adresse mail indiquée.  </div>
+                            <div class="message">
+                                <h3>{{ 'merci'|trans }}</h3>
+                                {{ 'accept'|trans }}
+                                 </div>
                             {%  else %}
                                 <div class="message">Votre paiement a été refusé</div>
                             {% endif %}
                         <div class="row">
                             <div class="row">
-                            
-                            <a href="{{ path('index') }}">Retour à l'accueil</a>
+                                <div class="col-md-6 col-md-push-3">
+                                    <a href="{{ path('index') }}">{{ 'back'|trans }}</a>
+                                </div>
                             </div>
                             
                     </div>

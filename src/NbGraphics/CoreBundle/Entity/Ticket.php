@@ -3,6 +3,8 @@
 namespace NbGraphics\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
 
 /**
  * Ticket
@@ -31,6 +33,7 @@ class Ticket
      * @var string
      *
      * @ORM\Column(name="Firstname", type="string", length=255)
+     * @Assert\Length(min=3)
      */
     private $firstname;
 
@@ -38,6 +41,7 @@ class Ticket
      * @var string
      *
      * @ORM\Column(name="Name", type="string", length=255)
+     * @Assert\Length(min=3)
      */
     private $name;
 
@@ -45,6 +49,7 @@ class Ticket
      * @var \DateTime
      *
      * @ORM\Column(name="Birthday", type="datetime")
+     * @Assert\DateTime()
      */
     private $birthday;
 
@@ -52,6 +57,7 @@ class Ticket
      * @var string
      *
      * @ORM\Column(name="Country", type="string", length=255)
+     * @Assert\Length(min=3)
      */
     private $country;
 
@@ -59,6 +65,7 @@ class Ticket
      * @var \DateTime
      *
      * @ORM\Column(name="Visitdate", type="datetime")
+     * @Assert\DateTime()
      */
     private $visitdate;
 
@@ -73,6 +80,7 @@ class Ticket
      * @var string
      *
      * @ORM\Column(name="Price", type="decimal", precision=5, scale=2)
+     * @Assert\NotBlank()
      */
     private $price;
     
@@ -85,6 +93,7 @@ class Ticket
      * @var string
      *
      * @ORM\Column(name="Code", type="string", length=25)
+     * @Assert\Length(min=15)
      */
     private $code;
     
@@ -311,17 +320,27 @@ class Ticket
         return $this->reduction;
     }
     
+    /** set the random code
+     * @param $code
+     * @return $this
+     */
     public function setCode($code)
     {
         $this->code = $code;
         return $this;
     }
     
+    /**
+     * @return string
+     */
     public function getCode()
     {
         return $this->code;
     }
     
+    /** generate a random code
+     * @return string
+     */
     public function generateCode()
     {
         $code = "";
@@ -330,6 +349,47 @@ class Ticket
             $code .= $chaine[rand()%strlen($chaine)];
         }
         return $code;
+    }
+    
+    /**
+     * @Assert\Callback
+     */
+    public function isDateValid(ExecutionContextInterface $context)
+    {
+        $day = new \DateTime();
+        $day = $day->format('d-m-Y');
+        $visitday = $this->getVisitdate()->format('d-m-y');
+    
+        if ($visitday < $day)
+        {
+            $context->buildViolation('Vous ne pouvez pas sélectionner une date antérieure')
+                    ->atPath('visitdate')
+                    ->addViolation();
+        }
+    }
+    
+    /**
+     * @Assert\Callback
+     *
+     */
+    
+    public function isDurationValid(ExecutionContextInterface $context)
+    {
+        $day = new \DateTime();
+        $day = $day->format('d-m-y');
+        $hour = new \DateTime();
+        $hour = $hour->format('H:i:s');
+        $visitday = $this->getVisitdate()->format('d-m-y');
+        
+        if ($visitday == $day)
+        {
+            if ($hour >= '14:00:00' && $this->getDuration() == '1')
+            {
+                $context->buildViolation('It\'s too late to select a AllDay ticket')
+                        ->atPath('duration')
+                        ->addViolation();
+            }
+        }
     }
     
 }

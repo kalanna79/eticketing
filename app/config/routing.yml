@@ -5,3 +5,4 @@ nb_graphics_core:
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+

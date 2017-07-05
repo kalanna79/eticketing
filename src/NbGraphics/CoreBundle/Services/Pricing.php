@@ -11,8 +11,11 @@
     
     class Pricing
     {
-        /**
-         * Calcule le prix du billet selon le tarif et la durée
+    
+        /** Calculate the final price of a ticket according to the duration
+         * @param $price
+         * @param $duration
+         * @return float|int
          */
         public function OneTicketPrice($price, $duration)
         {
@@ -26,7 +29,12 @@
                 return $price;
             }
         }
-        
+    
+        /** calculate the price of of a ticket according to age
+         * @param      $age
+         * @param null $reduction
+         * @return int
+         */
         public function Tarif($age, $reduction = null)
         {
             switch ($age)
@@ -49,7 +57,12 @@
             }
             return $price;
         }
-        
+    
+        /** Calculate the age
+         * @param $birthday
+         * @param $visitdate
+         * @return string
+         */
         public function HowOld($birthday, $visitdate)
         {
             $diff = date_diff($visitdate, $birthday);

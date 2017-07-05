@@ -20,16 +20,21 @@ class TicketType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('firstname',  TextType::class)
-                ->add('name',       TextType::class)
+        $builder->add('firstname',  TextType::class, array('label' => 'Prénom'))
+                ->add('name',       TextType::class, array('label' => 'Nom'))
                 ->add('birthday',   DateType::class, array(
                     'widget' => 'single_text',
                     'format' => 'dd-MM-yyyy',
+                    'label'  => 'Date de naissance'
                 ))
-                ->add('country',    CountryType::class)
+                ->add('country',    CountryType::class, array(
+                    'preferred_choices' => array('FR'),
+                    'label' => 'Pays'
+                ))
                 ->add('visitdate',  DateType::class, array(
                     'widget' => 'single_text',
                     'format' => 'dd-MM-yyyy',
+                    'label'  => 'Date de la visite',
                     'attr'   =>  array(
                         'class'   => 'js-datepicker',
                         'id'      => 'visit'),
@@ -39,7 +44,8 @@ class TicketType extends AbstractType
                     'choices' => array(
                         'toute la journée' => '1',
                         'l\'après-midi' => "2"
-                    )
+                    ),
+                    'label' => 'Durée'
                 ))
                 ->add('reduction', CheckboxType::class, array(
                     'label' => 'Vous bénéficiez d\'un tarif réduit',
@@ -54,7 +60,7 @@ class TicketType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => Ticket::class,
+            'data_class' => 'NbGraphics\CoreBundle\Entity\Ticket',
         ));
     }
 

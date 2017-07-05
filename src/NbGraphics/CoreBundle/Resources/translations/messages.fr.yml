@@ -1,0 +1,32 @@
+titre: Billetterie en Ligne
+sous_titre: Réservez vos billets en 3 clics
+Nb_billets: Nombre de billets désirés
+Vous désirez: Vous désirez
+le: le
+aujourd'hui: aujourd'hui
+toute la journée: toute la journée
+l'après-midi: l'après-midi à partir de 14 heures
+seul: seul
+accompagné de : accompagné de
+1 personne: 1 personne
+Suivant: Suivant
+Nom: Nom
+Prénom: Prénom
+Email: Email
+Billets: Billets
+Date de la visite: Date de la visite
+Durée: Durée
+Vous bénéficiez d'un tarif réduit: Vous bénéficiez d'un tarif réduit
+Date de naissance: Date de naissance
+Pays: Pays
+0: Billet n°1
+sendTo: Les billets seront envoyés à cette adresse dès validation du paiement.
+tickname: Vos billets nominatifs:
+valable: Valable le %visitdate%
+reduction: Réduction
+price: Tarif
+total: Total de la commande %totalprice%
+paiement: Paiement par carte
+merci: Merci pour votre commande !
+accept: Votre paiement a été validé, vous recevrez très prochainement vos billets à l'adresse mail indiquée.
+back: Retour à l'accueil

@@ -96,6 +96,8 @@
     
             foreach ($tickets as $ticket)
             {
+                $visit = $ticket->getVisitdate();
+                $visit = $visit->format('d-m-Y');
                 $age = $this->pricing->HowOld($ticket->getBirthday(), $ticket->getVisitdate());
                 $tarif = $this->pricing->Tarif($age, $ticket->getReduction());
                 $price = $this->pricing->OneTicketPrice($tarif, $ticket->getDuration());

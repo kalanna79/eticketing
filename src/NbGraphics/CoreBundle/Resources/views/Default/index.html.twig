@@ -8,13 +8,13 @@
                 
                 <div class="tab-content">
                     <div class="tab-content-inner active" data-content="signup">
-                        <h3>Nombre de billets désirés </h3>
+                        <h3>{{ 'Nb_billets'|trans }} </h3>
                         
                         
                         {{ form_start(form3, {'attr': {'class': '', 'role': 'form'}}) }}
                         <div class="row form-group">
                             <div class="col-md-12">
-                                {{ form_row(form3.choiceNb, {'label': 'Vous voulez venir : '}) }}
+                                {{ form_row(form3.choiceNb, {'label': 'Vous désirez'}) }}
                             </div>
                         </div>
                         <div class="row form-group">
