@@ -57,7 +57,7 @@ class Ticket
      * @var string
      *
      * @ORM\Column(name="Country", type="string", length=255)
-     * @Assert\Length(min=3)
+     * @Assert\Length(min=2)
      */
     private $country;
 
@@ -80,7 +80,6 @@ class Ticket
      * @var string
      *
      * @ORM\Column(name="Price", type="decimal", precision=5, scale=2)
-     * @Assert\NotBlank()
      */
     private $price;
     
@@ -358,11 +357,11 @@ class Ticket
     {
         $day = new \DateTime();
         $day = $day->format('d-m-Y');
-        $visitday = $this->getVisitdate()->format('d-m-y');
+        $visitday = $this->getVisitdate()->format('d-m-Y');
     
         if ($visitday < $day)
         {
-            $context->buildViolation('Vous ne pouvez pas sélectionner une date antérieure')
+            $context->buildViolation('day')
                     ->atPath('visitdate')
                     ->addViolation();
         }
@@ -385,7 +384,7 @@ class Ticket
         {
             if ($hour >= '14:00:00' && $this->getDuration() == '1')
             {
-                $context->buildViolation('It\'s too late to select a AllDay ticket')
+                $context->buildViolation('duration')
                         ->atPath('duration')
                         ->addViolation();
             }

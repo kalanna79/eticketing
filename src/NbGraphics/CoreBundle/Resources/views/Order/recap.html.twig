@@ -4,16 +4,18 @@
     </div>
         
         <div class="col-md-5 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+            
         <div class="form-wrap">
             <div class="tab">
                 
                 <div class="tab-content">
+                    {% for flashMsg in app.session.flashBag.get('error') %}
+                        <div class="text-center alert alert-danger">
+                            {{ flashMsg }}
+                        </div>
+                    {% endfor %}
                     <div class="tab-content-inner active" data-content="signup">
                         <h3>{{ 'your_order'|trans }}</h3>
-                        {% for message in app.flashes('notice') %}
-                        <div class="flash-notice">{{ message }} </div>
-                            {% endfor %}
-                        
                         <div class="row">
                             <h4>{{ 'coordonnees'|trans }}</h4>
                             <div class="col-md-12">{{ order.firstname }} {{ order.name }}</div>

@@ -64,7 +64,6 @@ class Basket
      * @var integer
      *
      * @ORM\Column(name="total", type="integer")
-     * @Assert\NotBlank()
      */
     private $total;
     

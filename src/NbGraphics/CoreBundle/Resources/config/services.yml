@@ -7,6 +7,9 @@ services:
 
     nb_graphics_core.pricing:
         class: NbGraphics\CoreBundle\Services\Pricing
+        arguments:
+            - "%tarif%"
+            - "%age%"
 
     nb_graphics_core.booking:
         class: NbGraphics\CoreBundle\Services\Booking
@@ -21,6 +24,11 @@ services:
             - "@doctrine.orm.entity_manager"
             - "@mailer"
             - "@templating"
+
+
+
+
+
 
 
 

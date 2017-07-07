@@ -10,6 +10,7 @@
     
     use Symfony\Component\HttpFoundation\Request;
     use Symfony\Component\HttpFoundation\RedirectResponse;
+    use Symfony\Component\HttpFoundation\Response;
     use Doctrine\ORM\EntityManagerInterface;
     use Symfony\Component\Swift_Mailer;
 
@@ -44,7 +45,7 @@
             $amount = ($session->get('amount'));
             $id = $session->get('panier');
             $email = $session->get('email');
-            dump($id);
+            
     
             \Stripe\Stripe::setApiKey("sk_test_tVpqFhaPaWWOPOkhtc3rnxg5");
     
@@ -59,7 +60,6 @@
                                                      "metadata"    => array("order_id" => $id),
                                                      "receipt-email" => $email
                                                  ));
-                $session->getFlashBag()->add("notice", "Votre paiment de ". ($amount/100) . " € a bien été accepté, votre commande est confirmée");
                 $repository = $this->em->getRepository('NbGraphicsCoreBundle:Basket');
     
                 $order = $repository->find($session->get('panier'));
@@ -68,11 +68,9 @@
                 $this->em->flush();
                 $this->sendTickets($request);
                 $session->clear();
-                return $charge;
+                return true;
             } catch (\Stripe\Error\Card $e) {
-                $session->getFlashBag()->addFlash("notice", "Votre paiement a échoué, veuillez recommencer");
-        
-                return $this->redirectToRoute('recap');
+                return false;
             }
         }
     

@@ -15,6 +15,7 @@
     use NbGraphics\CoreBundle\Entity\Basket;
     use Symfony\Component\Form\Extension\Core\Type\FormType;
     use Symfony\Component\Form\Form;
+    use Symfony\Component\HttpFoundation\Session\Session;
 
 
     class RecapController extends Controller

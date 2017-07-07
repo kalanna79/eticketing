@@ -12,6 +12,15 @@
     class Pricing
     {
     
+        private $tarif;
+        private $age;
+        
+        public function __construct($tarif, $age)
+        {
+            $this->tarif = $tarif;
+            $this->age = $age;
+        }
+    
         /** Calculate the final price of a ticket according to the duration
          * @param $price
          * @param $duration
@@ -39,20 +48,20 @@
         {
             switch ($age)
             {
-                case $age < 4:
-                    $price = 0;
+                case $age < $this->age['baby']:
+                    $price = $this->tarif['baby'];
                     break;
-                case $age >= 4 && $age < 12:
-                    $price = 8;
+                case $age >= $this->age['baby'] && $age < $this->age['child']:
+                    $price = $this->tarif['child'];
                     break;
-                case $age >= 60:
-                    $price = 12;
+                case $age >= $this->age['senior']:
+                    $price = $this->tarif['senior'];
                     break;
                 case $reduction:
-                    $price = 10;
+                    $price = $this->tarif['reduced'];
                     break;
                 default:
-                    $price = 16;
+                    $price = $this->tarif['normal'];
                     break;
             }
             return $price;
