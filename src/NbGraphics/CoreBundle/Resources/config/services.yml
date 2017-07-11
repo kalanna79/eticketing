@@ -25,6 +25,13 @@ services:
             - "@mailer"
             - "@templating"
 
+    nb_graphics.validator.numberticketsvalid:
+        class: NbGraphics\CoreBundle\Validator\numberTicketsValidValidator
+        arguments:
+            - "@doctrine.orm.entity_manager"
+        tags:
+            - { name: validator.constraint_validator, alias: nb_core_numbertickets}
+
 
 
 

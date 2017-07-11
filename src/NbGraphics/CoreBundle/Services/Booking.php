@@ -48,15 +48,16 @@
          */
         public function setOrder($nbBillets, Request $request)
         {
-            $session = $request->getSession();
     
+            $session = $request->getSession();
+          
             $tickets = $this->addTickets($nbBillets);
             $basket = new Basket();
             $basket->createTickets($tickets);
     
             $form = $this->form->create(BasketType::class, $basket);
             $form->handleRequest($request);
-    
+            
             if ($form->isSubmitted() && $form->isValid())
             {
                 $data = $form->getData();
@@ -64,8 +65,6 @@
                 $this->em->persist($data);
                 $this->em->flush();
                 $session->set('panier', $basket->getId());
-    
-    
             }
             return $form;
         }
