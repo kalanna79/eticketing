@@ -11,16 +11,17 @@
 
     use Symfony\Component\Validator\Constraint;
 
+
     /**
      * @Annotation
      */
     
-    class numberTicketsValid extends Constraint
+    class isDayValid extends Constraint
     {
-     public $message = 'billet';
+     public $message = 'holiday';
      
      public function validatedBy()
      {
-         return 'nb_core_numbertickets';
+         return 'nb_core_holidays';
      }
     }

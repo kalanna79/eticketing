@@ -5,7 +5,8 @@ namespace NbGraphics\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
-use NbGraphics\CoreBundle\Validator\numberTicketsValid;
+use NbGraphics\CoreBundle\Validator\Constraints\numberTicketsValid;
+use NbGraphics\CoreBundle\Validator\Constraints\isDayValid;
 
 /**
  * Ticket
@@ -67,7 +68,8 @@ class Ticket
      *
      * @ORM\Column(name="Visitdate", type="datetime")
      * @Assert\DateTime()
-     * @NumberTicketsValid()
+     * @numberTicketsValid()
+     * @isDayValid()
      */
     private $visitdate;
 
@@ -357,11 +359,11 @@ class Ticket
      */
     public function isDateValid(ExecutionContextInterface $context)
     {
-        $day = new \DateTime();
-        $day = $day->format('d-m-Y');
-        $visitday = $this->getVisitdate()->format('d-m-Y');
-    
-        if ($visitday < $day)
+        $today = new \DateTime();
+        $visitday = $this->getVisitdate();
+        $diff = date_diff($visitday, $today);
+        
+        if ($diff->days < 0)
         {
             $context->buildViolation('day')
                     ->atPath('visitdate')

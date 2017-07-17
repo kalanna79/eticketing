@@ -12,25 +12,32 @@
     use Symfony\Component\Validator\ConstraintValidator;
     use NbGraphics\CoreBundle\Entity\Ticket;
     use Doctrine\ORM\EntityManagerInterface;
-
     
-    class numberTicketsValidValidator extends ConstraintValidator
+
+    class isDayValidValidator extends ConstraintValidator
     {
         private $em;
-        public function __construct(EntityManagerInterface $em)
+        private $holidays;
+        
+        public function __construct(EntityManagerInterface $em, $holidays)
         {
             $this->em           = $em;
-    
+            $this->holidays     = $holidays;
         }
     
         public function validate($visitdate, Constraint $constraint)
         {
             $today = new \DateTime();
-            $count = count($this->em->getRepository(Ticket::class)->findBy(array('visitdate'=>$today)));
-            
-            if ($count >=1000)
-            {
-                $this->context->buildViolation($constraint->message)->addViolation();
+            $year = $today->format('Y');
+            $holidays = $this->holidays;
+    
+            foreach ($holidays as $holiday) {
+                $holiday .= $year;
+                $holiday = date_create($holiday);
+    
+                if ($visitdate == $holiday) {
+                    $this->context->buildViolation($constraint->message)->addViolation();
+                }
             }
         }
     }

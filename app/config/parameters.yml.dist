@@ -29,3 +29,13 @@ parameters:
         baby: 4
         child: 12
         senior: 60
+
+    holidays:
+            new_year: 01-01-
+            1_may:  01-05-
+            8_may: 08-05-
+            14_july: 14-07-
+            15_august: 15-08-
+            1_nov: 01-11-
+            11_nov: 11-11-
+            25_dec: 25-12-
