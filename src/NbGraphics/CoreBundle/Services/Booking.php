@@ -65,6 +65,7 @@
                 $this->em->persist($data);
                 $this->em->flush();
                 $session->set('panier', $basket->getId());
+                dump($session);
             }
             return $form;
         }

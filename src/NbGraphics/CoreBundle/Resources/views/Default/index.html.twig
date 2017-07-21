@@ -1,47 +1,14 @@
 {% extends "::layout.html.twig" %}
 
 {% block body %}
-    </div>
-    <div class="col-md-5 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-        <div class="form-wrap">
-            <div class="tab">
-                
-                <div class="tab-content">
-                    <div class="tab-content-inner active" data-content="signup">
-                        <h3>{{ 'Nb_billets'|trans }} </h3>
-                        
-                        
-                        {{ form_start(form3, {'attr': {'class': '', 'role': 'form'}}) }}
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                {{ form_row(form3.choiceNb, {'label': 'Vous désirez'}) }}
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                {{  form_row(form3.NbBillets, {'label': ' '}) }}
-                            </div>
-                            
-                            <div class="col-md-4 col-md-push-4">
-                                {{ form_row(form3.suivant) }}
-                            </div>
-                        </div>
-                        {{  form_end(form3) }}
-                    
-                    </div>
-                
-                
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    
+    <div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight">
+        <div class="col-md-6" style="text-align: center"><a href="{{ path('nbtickets', app.request.get('_route_params')|merge
+            ({'_locale':
+                'fr'})
+            ) }}">FR</a></div>
+        <div class="col-md-6" style="text-align: center"><a href="{{ path('nbtickets', app.request.get('_route_params')|merge({'_locale': 'en'}))
+            }}">EN</a></div>
     
     </div>
-    </div>
-    </div>
-    </header>
-    </div>
-
+    
 {%  endblock %}

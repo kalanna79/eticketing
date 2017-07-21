@@ -2,6 +2,10 @@ index:
     path:     /
     defaults: { _controller: NbGraphicsCoreBundle:Default:index }
 
+nbtickets:
+    path:   /nbtickets
+    defaults: { _controller: NbGraphicsCoreBundle:Order:nbtickets }
+
 order:
     path:   /order
     defaults: { _controller: NbGraphicsCoreBundle:Order:order }
@@ -21,3 +25,11 @@ checkout:
 confirmation:
     path:   /confirmation
     defaults: { _controller: NbGraphicsCoreBundle:Payment:sendTicket }
+
+mentions:
+    path:   /mentions
+    defaults : { _controller: NbGraphicsCoreBundle:Default:mentions }
+
+setlocale:
+    path:   /setlocale/{language}
+    defaults: { _controller: NbGraphicsCoreBundle:Default:setLocale}

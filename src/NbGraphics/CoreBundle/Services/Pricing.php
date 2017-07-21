@@ -44,7 +44,7 @@
          * @param null $reduction
          * @return int
          */
-        public function Tarif($age, $reduction = null)
+        public function Tarif($age, $reduction = false)
         {
             switch ($age)
             {

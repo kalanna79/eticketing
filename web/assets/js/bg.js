@@ -33,9 +33,9 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/louvre1280.jpg': 'center',
-							'images/paris_1920.jpg': 'center',
-							'images/louvre2-1920.jpg': 'center'
+							'assets/images/louvre1280.jpg': 'center',
+							'assets/images/paris_1920.jpg': 'center',
+							'assets/images/louvre3_1920.jpg': 'center'
 						},
 
 					// Delay.

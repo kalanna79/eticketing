@@ -10,20 +10,23 @@
 * 	Template Style 
 *
 * ======================================================= */
+html {
+  height:100%;
+}
 body {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #7D7E80;
   background: #fff;
+  height: 100%;
 }
 
 #page {
   position: relative;
   overflow-x: hidden;
   width: 100%;
-  height: 100%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -42,7 +45,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: 101;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   content: "";
 }
 
@@ -86,11 +89,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-container {
-  max-width: 1100px;
+  max-width: 1000px;
   position: relative;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  height: 100%;
 }
 
 .gtco-nav {
@@ -177,11 +181,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #gtco-header {
-  background: #4d4d4d;
+  background: white;
 }
 @media screen and (max-width: 992px) {
   #gtco-header.gtco-cover {
-    height: inherit !important;
+    height: 100% !important;
     padding: 3em 0 !important;
   }
 }
@@ -216,11 +220,11 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-header h1, #gtco-header h2 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #e66604;
 }
 #gtco-header h1 {
   margin-bottom: 0px;
-  font-size: 39px;
+  font-size: 36px;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -241,9 +245,9 @@ h1, h2, h3, h4, h5, h6, figure {
   border-top: 10px solid #e67111;
   position: relative;
   width: 100%;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 #gtco-header .form-wrap .tab-menu {
   padding: 0 !important;
@@ -359,13 +363,13 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 .gtco-video:hover .overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.2);
 }
 .gtco-video:hover a {
   position: relative;
@@ -377,7 +381,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-cover {
-  height: 900px;
+  height: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -398,7 +402,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0); */
 }
 .gtco-cover > .gtco-container {
   position: relative;
@@ -406,43 +410,43 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .gtco-cover {
-    height: 600px;
+    height: 100%;
   }
 }
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
-  height: 900px;
+  height: 100%;
   display: table;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .gtco-cover .display-t,
   .gtco-cover .display-tc {
-    height: 600px;
+    height: 100%;
   }
 }
 .gtco-cover.gtco-cover-sm {
-  height: 600px;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-sm {
-    height: 400px;
+    height: 100%;
   }
 }
 .gtco-cover.gtco-cover-sm .display-t,
 .gtco-cover.gtco-cover-sm .display-tc {
-  height: 600px;
+  height: 100%;
   display: table;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-sm .display-t,
   .gtco-cover.gtco-cover-sm .display-tc {
-    height: 400px;
+    height: 100%;
   }
 }
 .gtco-cover.gtco-cover-xs {
-  height: 500px;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-xs {
@@ -977,7 +981,7 @@ form label {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: black;
+  background: white;
   top: 0;
   right: 0;
   top: 0;
@@ -1730,78 +1734,46 @@ form label {
     max-width: 100%;
   }
 }
+.order {
+  margin-top: 7em;
+  border-top: 7px solid orange;
+}
 
-.price-box {
-  background: #fff;
-  border: 2px solid #ECEEF0;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 40px;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
+.billet {
+ background-color: rgba(247, 247, 247, 0.81);
+  padding-bottom: 1.2em;
+  padding-top: 1.2em;
+  padding-right: 1.2em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid orange;
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
   border-radius: 5px;
 }
-.price-box.popular {
-  border: 2px solid #e67111;
-}
-.price-box.popular .popular-text {
-  top: 0;
-  left: 50%;
-  margin-left: -54px;
-  margin-top: -2em;
-  position: absolute;
-  padding: 4px 20px;
-  background: #e67111;
-  color: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-}
-.price-box.popular .popular-text:after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-top: 10px solid black;
-  border-top-color: #e67111;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+
+.billet>h2{
+  color: black;
 }
 
-.pricing-plan {
-  margin: 0 0 30px 0;
-  padding: 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.price {
-  font-size: 50px;
-  color: #000;
-}
-.price .currency {
-  font-size: 20px;
-  top: -1.2em;
-}
-.price small {
-  font-size: 16px;
-}
-
-.pricing-info {
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-.pricing-info li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.footer{
+  z-index: 1;
+  height: 30px;
+  width: 100%;
   text-align: center;
 }
+
+footer > div {
+  padding-bottom:5px;
+  margin-top: 12px;
+}
+
+.content {
+  min-height: calc(68vh - 30px);
+}
+
 
 .fh5co-faq-list {
   margin: 0;

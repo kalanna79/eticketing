@@ -21,11 +21,11 @@
             
             if ($basket == true)
             {
-                $this->addFlash("success", "Votre paiment de ". ($amount/100) . " € a bien été accepté, votre commande est confirmée");
+                $this->addFlash("success", "Votre paiment a bien été accepté, votre commande est confirmée");
     
                 $session = $request->getSession();
-                $session->invalidate();
-                return $this->render("NbGraphicsCoreBundle:Order:prepare.html.twig", array('basket' => $basket));
+               $session->invalidate();
+                return $this->render("NbGraphicsCoreBundle:Order:confirm.html.twig", array('basket' => $basket));
     
             } else {
                 $this->addFlash("error", "Votre paiement a échoué, veuillez recommencer");

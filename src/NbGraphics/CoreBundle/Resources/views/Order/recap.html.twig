@@ -1,55 +1,57 @@
 {% extends "::layout.html.twig" %}
 
 {% block body %}
-    </div>
         
-        <div class="col-md-5 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-            
-        <div class="form-wrap">
-            <div class="tab">
-                
-                <div class="tab-content">
+        <div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight">
+        
                     {% for flashMsg in app.session.flashBag.get('error') %}
                         <div class="text-center alert alert-danger">
                             {{ flashMsg }}
                         </div>
                     {% endfor %}
-                    <div class="tab-content-inner active" data-content="signup">
-                        <h3>{{ 'your_order'|trans }}</h3>
+                    
+                        <h3 style="text-align: center">{{ 'your_order'|trans }}</h3>
                         <div class="row">
-                            <h4>{{ 'coordonnees'|trans }}</h4>
+                            <div class="col-md-12">
+                            <h4 style="text-align: center">{{ 'coordonnees'|trans }}</h4>
                             <div class="col-md-12">{{ order.firstname }} {{ order.name }}</div>
                             <div class="col-md-3">email :</div><div class="col-md-6">{{ order.email }}</div>
                             <div class="col-md-12"> {{ 'sendTo'|trans }}</div>
                         </div>
+                        </div>
                         <hr>
-                            <h4>{{ 'tickname'|trans }}</h4>
+                            <h4 style="text-align: center">{{ 'tickname'|trans }}</h4>
                         <hr>
                         {% for ticket in order.tickets %}
                             <div class="row">
-                                <div class="row">
-                                <div class="col-md-12">{{ ticket.firstname }} {{ ticket.name }}</div>
+                                <div class="col-md-12">
+                                    
+                                        <div class="col-md-12">{{ ticket.firstname }} {{ ticket.name }}</div>
+                                   
                                 </div>
-                                <div class="row">
+                                <div class="col-md-12">
                                     <div class="col-md-12">{{ 'valable'|trans({'%visitdate%': ticket
                                             .visitdate|date
                                             ('d-m-Y') }) }}
+                                    </div>
+                                        <div class="col-md-12">
                                         {% if ticket.duration == "1" %}{{ 'toute la journée'|trans }} {% else
                                         %}{{ 'l\'après-midi'|trans }} {% endif %}
                                     </div>
                                 </div>
-                            <div class="col-md-6">{{ 'reduction'|trans }}</div><div class="col-md-6">
+                            <div class="col-md-5 col-md-push-1">{{ 'reduction'|trans }}</div><div class="col-md-6">
                             {% if ticket.reduction == true %} Oui<br>
                             <em>Un justificatif vous sera demandé à l'entrée.</em>
                                 {% else %} Non
                                     {% endif %}</div>
-                            <div class="col-md-6">{{ 'price'|trans }}</div><div class="col-md-6">{{ ticket.price
+                            <div class="col-md-5 col-md-push-1">{{ 'price'|trans }}</div><div class="col-md-6">{{ ticket.price
                                 }} €</div>
-                        </div>
+                        
+                            </div>
                             <hr>
                         {%  endfor %}
-                        <h4>{{ 'total'|trans({'%totalprice%': order.total }) }} €</h4>
-                        <form action="{{ path('checkout') }}" method="POST">
+                        <h4 style="text-align: center">{{ 'total'|trans({'%totalprice%': order.total }) }} €</h4>
+                        <form action="{{ path('checkout') }}" method="POST" style="text-align: center">
         
                             <script
                                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -83,10 +85,4 @@
     </div>
     
     </div>
-    
-    
-    </div>
-    </div>
-    </div>
-    </header>
 {%  endblock %}
