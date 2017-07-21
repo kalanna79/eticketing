@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Traveler by freehtml5.co
-	Twitter: http://twitter.com/fh5co
-	URL: http://freehtml5.co
+	Theme inspired to Traveler by freehtml5.co
 -->
 <html>
 <head>
@@ -10,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ 'titre'|trans }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-    <meta name="author" content="FreeHTML5.co" />
+    <meta name="description" content="eticketing Louvre - an OpenClassRooms project" />
+    <meta name="keywords" content="project, symfony3, eticketing, Louvre, OpenClassRooms" />
+    <meta name="author" content="Natacha NOEL" />
     
     
     
@@ -79,9 +77,7 @@
                                             
                                             <img src="{{ asset('assets/images/louvre-760.jpg') }}" srcset="{{ asset('assets/images/louvre-320.jpg') }} 320w,{{ asset('assets/images/louvre-640.jpg') }} 640vw" sizes="35vw" alt="Logo du Louvre">
                                         </div>
-                                    
                                     </a>
-                                
                                 </div>
                                 <h1>{{ 'sous_titre'|trans }}</h1>
                             
@@ -128,18 +124,8 @@
     <script src="{{ asset('assets/js/bootstrap-datepicker.min.js') }}"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            var closeDays = [
-                '14-07-2017',
-                '01-11-2017',
-                '11-11-2017',
-                '25-12-2017',
-                '01-01-2018',
-                '01-05-2018',
-                '08-05-2018',
-            ];
-            
             var closeDays = ['14-07-2017'];
-            {% set MyArray = ['01-11-2017','11-11-2017'] %}
+            {% set MyArray = ['01-11-2017','11-11-2017''25-12-2017','01-01-2018','01-05-2018','08-05-2018'] %}
             {% for number in MyArray %}
                 closeDays.push('{{ number }}');
             {% endfor %}
