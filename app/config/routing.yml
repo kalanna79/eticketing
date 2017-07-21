@@ -1,6 +1,9 @@
 nb_graphics_core:
     resource: "@NbGraphicsCoreBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix: /{_locale}
+    defaults: { _locale: "%locale%" }
+    requirements:
+        _locale: fr|en|
 
 app:
     resource: '@AppBundle/Controller/'

@@ -10,20 +10,20 @@ seul: alone
 accompagné de : with
 1 personne: 1 person
 Suivant: Next
-Nom: Name
-Prénom: Firstname
+Name: Name
+Firstname: Firstname
 Email: Email
+Birthday: Birthday
 Billets: Tickets
+Billet: Ticket
 Date de la visite: Day of visit
 Durée: Duration
 Vous bénéficiez d'un tarif réduit: You get a reduced rate
 Date de naissance: Birthday
 Pays: Country
-0: Ticket n°1
-1: Ticket n°2
 your_order: Your order
 coordonnees: Your contact details
-sendTo: Tickets will be sent to this email upon confirmation of payment.
+sendTo: Tickets will be sent to this email upon confirmation of payment
 tickname: Your nominal tickets:
 valable: Valid on %visitdate%
 reduction: Discount card:
@@ -31,9 +31,18 @@ price: Price
 total: Total to pay %totalprice%
 paiement: Pay with card
 merci: Thank you for your order!
-accept: Your payment has been accepted, you will soon receive your tickets on the e-mail address indicated.
+accept: Your payment has been accepted, you will soon receive your tickets on the e-mail address indicated
 back: Back to home
 toolate: It's too late to select a AllDay ticket
+real:  This site is a test site realized as part of a training course
+noticket: No tickets shall be issued for the Louvre via this platform
+director: Publication Director
+dev: Development
+heb: Accommodation
+droits: Image rights
+mentions: Legal Notice
+coord: Your contact details
+wantvisit: You wish to visit the Louvre on:
 
 
 

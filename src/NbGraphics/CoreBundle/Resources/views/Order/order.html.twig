@@ -1,56 +1,79 @@
 {% extends "::layout.html.twig" %}
-
 {% block body %}
-    </div>
-        
-        <div class="col-md-5 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-        <div class="form-wrap ">
-            <div class="tab">
-                
-                <div class="tab-content">
-                    <div class="tab-content-inner active" data-content="signup">
-                        <h3>Billet </h3>
+   
+        <div class="col-md-4 col-md-push-2 billet animate-box order" data-animate-effect="fadeInRight">
+                        <h3>{{ 'coord' | trans }} </h3>
                         
                         {{ form_start(form, {'attr': {'class': '', 'role': 'form'}}) }}
-    
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                {{ form_row(form.name, {'label': 'Nom'}) }}
+                        <div class="row">
+                            <div class="col-md-4">
+                                {{ form_label(form.name) }}
+                            </div>
+                            <div class="col-md-8">
+                                {{ form_errors(form.name) }}
+                                {{ form_widget(form.name) }}
                             </div>
                         </div>
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                {{ form_row(form.firstname, {'label': 'Prénom'}) }}
+                        <div class="row">
+                            <div class="col-md-4">
+                                {{ form_label(form.firstname) }}
+                            </div>
+                            <div class="col-md-8">
+                                {{ form_errors(form.firstname) }}
+                                {{ form_widget(form.firstname) }}
                             </div>
                         </div>
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                {{ form_row(form.email, {'label': 'Email'}) }}
+                        <div class="row">
+                            <div class="col-md-4">
+                                {{ form_label(form.email) }}
+                            </div>
+                            <div class="col-md-8">
+                                {{ form_errors(form.email) }}
+                                {{ form_widget(form.email) }}
                             </div>
                         </div>
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                {{ form_row(form.tickets, {'label': 'Billets'}) }}
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-md-4 col-md-push-4">
-                                {{ form_row(form.Suivant) }}
-                            </div>
-                        </div>
-                        {{  form_end(form) }}
-                    
                     </div>
-                </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="row animate-box" data-animate-effect="fadeInRight">
+        {% for ticket in form.tickets %}
+    
+        <div class="col-md-12 billet">
+                    <div class="row">
+                        <div class="col-md-2">{{ 'Billet' |trans }} n°{{ loop.index }}</div>
+                        <div class="col-md-2"> {{ 'wantvisit' |trans }}</div>
+                        <div class="col-md-2">{{ form_widget(ticket.visitdate) }}</div>
+                        <div class="col-md-2">{{ form_widget(ticket.duration) }}</div>
+                    </div>
+            <hr>
+            <div class="row">
+            <div class="col-md-2 col-md-push-1"> {{ form_widget(ticket.firstname, { 'attr': {'class': 'form-control','placeholder': 'Firstname'}}) }} </div>
+                        <div class="col-md-2 col-md-push-1">{{ form_widget(ticket.name, { 'attr': {'class': 'form-control','placeholder': 'Name'}}) }}</div>
+                        <div class="col-md-2 col-md-push-1">{{ form_widget(ticket.birthday, { 'attr': {'class': 'form-control','placeholder': 'Birthday'}}) }}</div>
+                        <div class="col-md-2 col-md-push-1">{{ form_widget(ticket.country) }}</div>
+                <div class="col-md-3 col-md-push-1">{{ form_widget(ticket.reduction) }}</div>
+
+
             </div>
-        </div>
+                    <div class="row">
+                                    
+                    </div>
+            
+                    </div>
+        {% endfor %}
+    </div>
+    
+    <div class="col-md-2 col-md-push-8">
+
+        {{ form_widget(form.Suivant) }}
+        {{  form_end(form) }}
+
     </div>
     
     </div>
-    
-    
     </div>
     </div>
-    </div>
-    </header>
 {%  endblock %}
