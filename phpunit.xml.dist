@@ -21,7 +21,7 @@
     <filter>
         <whitelist>
             <directory>src</directory>
-            <directory>src/*/*Bundle/Tests/Controller</directory>
+            <directory>src/*/*Bundle/Tests</directory>
 
             <exclude>
                 <directory>src/*Bundle/Resources</directory>

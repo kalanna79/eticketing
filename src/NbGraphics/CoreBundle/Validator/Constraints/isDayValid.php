@@ -16,7 +16,7 @@
      * @Annotation
      */
     
-    class isDayValid extends Constraint
+    class IsDayValid extends Constraint
     {
      public $message = 'holiday';
      
