@@ -26,7 +26,7 @@
          * @param $duration
          * @return float|int
          */
-        public function OneTicketPrice($price, $duration)
+        public function oneTicketPrice($price, $duration)
         {
             if ($duration == '2')
             {
@@ -44,7 +44,7 @@
          * @param null $reduction
          * @return int
          */
-        public function Tarif($age, $reduction = false)
+        public function tarif($age, $reduction = false)
         {
             switch ($age)
             {
@@ -72,7 +72,7 @@
          * @param $visitdate
          * @return string
          */
-        public function HowOld($birthday, $visitdate)
+        public function howOld($birthday, $visitdate)
         {
             $diff = date_diff($visitdate, $birthday);
             $age = $diff->format('%Y');

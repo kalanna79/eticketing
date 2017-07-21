@@ -89,7 +89,7 @@
          * Allow to calculate the total of the basket
          * @param $basket
          */
-        public function Total($basket)
+        public function total(Basket $basket)
         {
             $tickets = $basket->getTickets();
             $total = $basket->getTotal();
@@ -98,9 +98,9 @@
             {
                 $visit = $ticket->getVisitdate();
                 $visit = $visit->format('d-m-Y');
-                $age = $this->pricing->HowOld($ticket->getBirthday(), $ticket->getVisitdate());
-                $tarif = $this->pricing->Tarif($age, $ticket->getReduction());
-                $price = $this->pricing->OneTicketPrice($tarif, $ticket->getDuration());
+                $age = $this->pricing->howOld($ticket->getBirthday(), $ticket->getVisitdate());
+                $tarif = $this->pricing->tarif($age, $ticket->getReduction());
+                $price = $this->pricing->oneTicketPrice($tarif, $ticket->getDuration());
                 $ticket->setPrice($price);
                 $total += $price;
                 $basket->setTotal($total);

@@ -29,7 +29,7 @@
             $birthday = new \DateTime('11-06-1979');
             $visitdate = new \DateTime();
             
-            $this->assertEquals(38, $this->service->HowOld($birthday, $visitdate));
+            $this->assertEquals(38, $this->service->howOld($birthday, $visitdate));
         }
     
         /**
@@ -49,9 +49,9 @@
             
             for ($i = 0; $i < $count; $i++)
             {
-                $this->assertEquals($tarifs[$i], $this->service->Tarif($tranches[$i], false));
+                $this->assertEquals($tarifs[$i], $this->service->tarif($tranches[$i], false));
             }
-           $this->assertEquals(10, $this->service->Tarif($tranches['2'], true));
+           $this->assertEquals(10, $this->service->tarif($tranches['2'], true));
         }
     
     
@@ -65,7 +65,7 @@
             
             foreach ($normaltarifs as $tarif)
             {
-                $this->assertEquals($tarif, $this->service->OneTicketPrice($tarif, '1'));
+                $this->assertEquals($tarif, $this->service->oneTicketPrice($tarif, '1'));
             }
             
             $count = count($demitarifs);
@@ -73,7 +73,7 @@
     
             for ($i = 0; $i < $count; $i++)
             {
-                $this->assertEquals($demitarifs[$i], $this->service->OneTicketPrice($normaltarifs[$i], $duration));
+                $this->assertEquals($demitarifs[$i], $this->service->oneTicketPrice($normaltarifs[$i], $duration));
             }
         }
     

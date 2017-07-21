@@ -23,7 +23,6 @@ class OrderController extends Controller
             
             if ($form3->isValid())
             {
-                $em = $this->getDoctrine()->getManager();
                 $data = $form3->getData();
                 
                 if ($data['choiceNb'] == 1)
@@ -39,7 +38,7 @@ class OrderController extends Controller
     }
     
     
-    public function OrderAction(Request $request)
+    public function orderAction(Request $request)
     {
     
         $session = $request->getSession();
@@ -54,3 +53,4 @@ class OrderController extends Controller
         'form' => $basket->createView()));
     }
 }
+

@@ -14,7 +14,7 @@
     use Doctrine\ORM\EntityManagerInterface;
     
 
-    class isDayValidValidator extends ConstraintValidator
+    class IsDayValidValidator extends ConstraintValidator
     {
         private $em;
         private $holidays;

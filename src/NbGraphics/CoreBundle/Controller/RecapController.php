@@ -11,16 +11,10 @@
     
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
     use Symfony\Component\HttpFoundation\Request;
-
-    use NbGraphics\CoreBundle\Entity\Basket;
-    use Symfony\Component\Form\Extension\Core\Type\FormType;
-    use Symfony\Component\Form\Form;
-    use Symfony\Component\HttpFoundation\Session\Session;
-
-
+    
     class RecapController extends Controller
     {
-        public function RecapAction(Request $request)
+        public function recapAction(Request $request)
         {
             $session = $request->getSession();
             $repository = $this

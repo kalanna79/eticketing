@@ -19,7 +19,7 @@
         {
             $basket = $this->get('nb_graphics_core.payment')->setCheckout($request);
             
-            if ($basket == true)
+            if ($basket === true)
             {
                 $this->addFlash("success", "Votre paiment a bien été accepté, votre commande est confirmée");
     
@@ -34,4 +34,5 @@
             
         }
     }
+    
     
