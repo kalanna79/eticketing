@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('nb_graphics_core');
+        $treeBuilder->root('nb_graphics_core');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
@@ -27,3 +27,4 @@ class Configuration implements ConfigurationInterface
         return $treeBuilder;
     }
 }
+ 

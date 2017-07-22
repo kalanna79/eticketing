@@ -14,10 +14,6 @@
 
     class Payment
     {
-        private $booking;
-        private $mailer;
-        
-    
         /**
          * Booking constructor.
          * @param Booking                $booking
@@ -46,10 +42,10 @@
     
             \Stripe\Stripe::setApiKey("sk_test_tVpqFhaPaWWOPOkhtc3rnxg5");
     
-            $token = $_POST['stripeToken'];
+            $token = $token = $request->request->get('stripeToken');
     
             try {
-                $charge = \Stripe\Charge::create(array(
+                \Stripe\Charge::create(array(
                                                      'amount'      => $amount,
                                                      'currency'    => "eur",
                                                      "source"      => $token,
@@ -93,3 +89,5 @@
             $this->mailer->send($message);
         }
     }
+    
+    

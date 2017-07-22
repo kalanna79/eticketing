@@ -13,3 +13,4 @@ class DefaultControllerTest extends WebTestCase
         $this->assertContains('Louvre', $client->getResponse()->getContent());
     }
 }
+ 
