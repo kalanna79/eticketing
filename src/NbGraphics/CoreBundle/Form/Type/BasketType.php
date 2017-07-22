@@ -1,6 +1,6 @@
 <?php
 
-namespace NbGraphics\CoreBundle\Form;
+namespace NbGraphics\CoreBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;

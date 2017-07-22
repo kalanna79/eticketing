@@ -5,7 +5,7 @@ namespace NbGraphics\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use NbGraphics\CoreBundle\Form\NbTicketsType;
+use NbGraphics\CoreBundle\Form\Type\NbTicketsType;
 
 
 class OrderController extends Controller

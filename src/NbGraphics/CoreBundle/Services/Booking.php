@@ -8,14 +8,12 @@
     
     namespace NbGraphics\CoreBundle\Services;
 
-    use Doctrine\DBAL\Types\IntegerType;
     use NbGraphics\CoreBundle\Entity\Basket;
     use NbGraphics\CoreBundle\Entity\Ticket;
 
     use Symfony\Component\Form\FormFactory;
-    use NbGraphics\CoreBundle\Form\BasketType;
+    use NbGraphics\CoreBundle\Form\Type\BasketType;
     use Doctrine\ORM\EntityManagerInterface;
-    use Doctrine\ORM\EntityManager;
     
     use Symfony\Component\HttpFoundation\Request;
     class Booking

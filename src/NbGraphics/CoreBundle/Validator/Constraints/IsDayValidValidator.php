@@ -15,7 +15,6 @@
 
     class IsDayValidValidator extends ConstraintValidator
     {
-        private $em;
         private $holidays;
         
         public function __construct(EntityManagerInterface $em, $holidays)
@@ -40,3 +39,5 @@
             }
         }
     }
+    
+    

@@ -13,6 +13,8 @@
     <meta name="author" content="Natacha NOEL" />
     
     
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
     
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     
@@ -50,7 +52,7 @@
     
     <div class="gtco-loader"></div>
     
-    <div id="page" class="content">
+     <div id="page" class="content">
         
         
         <!-- <div class="page-inner"> -->
@@ -58,17 +60,9 @@
         <div id="gtco-header" class="gtco-cover gtco-cover-md content" role="banner">
             <div class="overlay"></div>
             <div class="gtco-container">
-                
                 <div class="row">
                     <div class="col-md-12 col-md-offset-0 text-left">
-                        
-                        
                         <div class="row row-mt-15em">
-                            <div class="row">
-                                <div class="col-sm-4 col-xs-12">
-                                
-                                </div>
-                            </div>
                             <div class="col-md-6 mt-text animate-box" data-animate-effect="fadeInUp">
                                 <div id="gtco-logo">
                                     
@@ -80,20 +74,18 @@
                                     </a>
                                 </div>
                                 <h1>{{ 'sous_titre'|trans }}</h1>
-                            
                             </div>
                                 {% block body %}
                                 {% endblock %}
-    <div class="row footer">
-        <div class="col-md-12">
-            Copyright Louvre 2017 - <a href="{{ path('mentions') }}"> {{ 'mentions'|trans }} </a> - CGV - FAQ
-        </div>
-    </div>
-                       
+                            <div class="row footer">
+                                <div class="col-md-12">
+                                    Copyright Louvre 2017 - <a href="{{ path('mentions') }}"> {{ 'mentions'|trans }} </a> - CGV - FAQ
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     
     
@@ -125,7 +117,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             var closeDays = ['14-07-2017'];
-            {% set MyArray = ['01-11-2017','11-11-2017''25-12-2017','01-01-2018','01-05-2018','08-05-2018'] %}
+            {% set MyArray = ['01-11-2017','11-11-2017','25-12-2017','01-01-2018','01-05-2018','08-05-2018'] %}
             {% for number in MyArray %}
                 closeDays.push('{{ number }}');
             {% endfor %}
@@ -149,8 +141,8 @@
     <!-- Main -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
                                 
-                                
-
+    
+    </div>
 </body>
 </html>
 
