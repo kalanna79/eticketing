@@ -1,1 +1,14 @@
-{% extends "::layout.html.twig" %}{% block body %}    <div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight">        <div class="col-md-6" style="text-align: center"><a href="{{ path('nbtickets', app.request.get('_route_params')|merge            ({'_locale':                'fr'})            ) }}">FR</a></div>        <div class="col-md-6" style="text-align: center"><a href="{{ path('nbtickets', app.request.get('_route_params')|merge({'_locale': 'en'}))            }}">EN</a></div>        </div>    {%  endblock %}
+{% extends "::layout.html.twig" %}
+
+{% block body %}
+    <div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight">
+        <div class="col-md-6" style="text-align: center"><a href="{{ path('nbtickets', app.request.get('_route_params')|merge
+            ({'_locale':
+                'fr'})
+            ) }}">FR</a></div>
+        <div class="col-md-6" style="text-align: center"><a href="{{ path('nbtickets', app.request.get('_route_params')|merge({'_locale': 'en'}))
+            }}">EN</a></div>
+    
+    </div>
+    
+{%  endblock %}
