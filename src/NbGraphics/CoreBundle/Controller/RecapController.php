@@ -29,5 +29,4 @@
             return $this->render('NbGraphicsCoreBundle:Order:recap.html.twig', array('order' => $order));
         }
     }
-  
      
