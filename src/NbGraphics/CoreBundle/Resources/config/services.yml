@@ -1,1 +1,42 @@
-services:    _defaults:        autowire: false        autoconfigure: true        public: true    nb_graphics_core.pricing:        class: NbGraphics\CoreBundle\Services\Pricing        arguments:            - "%tarif%"            - "%age%"    nb_graphics_core.booking:        class: NbGraphics\CoreBundle\Services\Booking        arguments:            - "@nb_graphics_core.pricing"            - "@form.factory"            - "@doctrine.orm.entity_manager"    nb_graphics_core.payment:        class: NbGraphics\CoreBundle\Services\Payment        arguments:            - "@nb_graphics_core.booking"            - "@doctrine.orm.entity_manager"            - "@mailer"            - "@templating"    nb_graphics.validator.numberticketsvalid:        class: NbGraphics\CoreBundle\Validator\Constraints\NumberTicketsValidValidator        arguments:            - "@doctrine.orm.entity_manager"        tags:            - { name: validator.constraint_validator, alias: nb_core_numbertickets}    nb_graphics.validator.isdayvalid:        class: NbGraphics\CoreBundle\Validator\Constraints\IsDayValidValidator        arguments:            - "@doctrine.orm.entity_manager"            - "%holidays%"        tags:            - { name: validator.constraint_validator, alias: nb_core_holidays}
+services:
+    _defaults:
+        autowire: false
+        autoconfigure: true
+        public: true
+
+
+    nb_graphics_core.pricing:
+        class: NbGraphics\CoreBundle\Services\Pricing
+        arguments:
+            - "%tarif%"
+            - "%age%"
+
+    nb_graphics_core.booking:
+        class: NbGraphics\CoreBundle\Services\Booking
+        arguments:
+            - "@nb_graphics_core.pricing"
+            - "@form.factory"
+            - "@doctrine.orm.entity_manager"
+    nb_graphics_core.payment:
+        class: NbGraphics\CoreBundle\Services\Payment
+        arguments:
+            - "@nb_graphics_core.booking"
+            - "@doctrine.orm.entity_manager"
+            - "@mailer"
+            - "@templating"
+
+    nb_graphics.validator.numberticketsvalid:
+        class: NbGraphics\CoreBundle\Validator\Constraints\NumberTicketsValidValidator
+        arguments:
+            - "@doctrine.orm.entity_manager"
+        tags:
+            - { name: validator.constraint_validator, alias: nb_core_numbertickets}
+
+    nb_graphics.validator.isdayvalid:
+        class: NbGraphics\CoreBundle\Validator\Constraints\IsDayValidValidator
+        arguments:
+            - "@doctrine.orm.entity_manager"
+            - "%holidays%"
+        tags:
+            - { name: validator.constraint_validator, alias: nb_core_holidays}
+
