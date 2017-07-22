@@ -5,8 +5,8 @@ namespace NbGraphics\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
-use NbGraphics\CoreBundle\Validator\Constraints\numberTicketsValid;
-use NbGraphics\CoreBundle\Validator\Constraints\isDayValid;
+use NbGraphics\CoreBundle\Validator\Constraints\NumberTicketsValid;
+use NbGraphics\CoreBundle\Validator\Constraints\IsDayValid;
 
 /**
  * Ticket
@@ -68,8 +68,8 @@ class Ticket
      *
      * @ORM\Column(name="Visitdate", type="datetime")
      * @Assert\DateTime()
-     * @numberTicketsValid()
-     * @isDayValid()
+     * @NumberTicketsValid()
+     * @IsDayValid()
      */
     private $visitdate;
 

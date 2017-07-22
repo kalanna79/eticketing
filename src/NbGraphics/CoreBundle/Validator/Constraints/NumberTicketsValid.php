@@ -15,7 +15,7 @@
      * @Annotation
      */
     
-    class numberTicketsValid extends Constraint
+    class NumberTicketsValid extends Constraint
     {
      public $message = 'billet';
      

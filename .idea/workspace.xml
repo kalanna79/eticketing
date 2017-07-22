@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a17605c4-b46e-4c33-97f6-378e8e3171ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="$PROJECT_DIR$/phpunit.xml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValid.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValidValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValid.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValid.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValid.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,16 +31,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/config.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,22 +51,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="isDayValid.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValid.php">
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="390">
+              <caret line="35" column="60" lean-forward="false" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="numberTicketsValidValidator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValidValidator.php">
+      <file leaf-file-name="IsDayValid.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValid.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberTicketsValidValidator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <folding>
+                <element signature="e#183#226#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,18 +96,20 @@
       <file leaf-file-name="Ticket.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4969">
-              <caret line="378" column="40" lean-forward="false" selection-start-line="378" selection-start-column="40" selection-end-line="378" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding>
+                <element signature="e#48#80#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="isDayValidValidator.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValidValidator.php">
+      <file leaf-file-name="IsDayValidValidator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="e#183#226#0#PHP" expanded="true" />
               </folding>
@@ -113,17 +121,17 @@
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Tests/Controller/DefaultControllerTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="numberTicketsValid.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValid.php">
+      <file leaf-file-name="NumberTicketsValid.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -152,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/ValidateDurationValidator.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/BasketType.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.fr.yml" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.en.yml" />
@@ -164,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValidator.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTickets.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/TicketRepository.php" />
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValid.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValidValidator.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -185,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/mentions.html.twig" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.en.yml" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" />
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Tests/Controller/DefaultControllerTest.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
@@ -201,8 +206,11 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValid.php" />
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValidValidator.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValid.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" />
       </list>
     </option>
   </component>
@@ -617,6 +625,62 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NbGraphics" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NbGraphics" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -783,16 +847,16 @@
       <workItem from="1499057323926" duration="73092000" />
       <workItem from="1500272970883" duration="21705000" />
       <workItem from="1500466007858" duration="29842000" />
-      <workItem from="1500637100846" duration="13673000" />
+      <workItem from="1500637100846" duration="14312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336978000" />
+    <option name="totallyTimeSpent" value="337617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1423" height="873" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24692252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -801,7 +865,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.4815351" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.77842146" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.77842146" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1035,14 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -1187,22 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5456">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1219,53 +1259,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4969">
-          <caret line="378" column="40" lean-forward="false" selection-start-line="378" selection-start-column="40" selection-end-line="378" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValidValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Tests/Controller/DefaultControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValidValidator.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5456">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="e#183#226#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="e#183#226#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#48#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="60" lean-forward="false" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

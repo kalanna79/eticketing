@@ -26,14 +26,14 @@ services:
             - "@templating"
 
     nb_graphics.validator.numberticketsvalid:
-        class: NbGraphics\CoreBundle\Validator\Constraints\numberTicketsValidValidator
+        class: NbGraphics\CoreBundle\Validator\Constraints\NumberTicketsValidValidator
         arguments:
             - "@doctrine.orm.entity_manager"
         tags:
             - { name: validator.constraint_validator, alias: nb_core_numbertickets}
 
     nb_graphics.validator.isdayvalid:
-        class: NbGraphics\CoreBundle\Validator\Constraints\isDayValidValidator
+        class: NbGraphics\CoreBundle\Validator\Constraints\IsDayValidValidator
         arguments:
             - "@doctrine.orm.entity_manager"
             - "%holidays%"
