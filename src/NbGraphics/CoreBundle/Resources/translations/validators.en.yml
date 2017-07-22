@@ -1,7 +1,1 @@
-duration: "It's too late to select a AllDay ticket for today."
-
-day: "You can not select an earlier date. Please, select another date."
-
-holiday: "The museum is closed on this day, please select another date."
-
-billet: "There are no tickets available for today. Please select another date."
+duration: "It's too late to select a AllDay ticket for today."day: "You can not select an earlier date. Please, select another date."holiday: "The museum is closed on this day, please select another date."billet: "There are no tickets available for today. Please select another date."
