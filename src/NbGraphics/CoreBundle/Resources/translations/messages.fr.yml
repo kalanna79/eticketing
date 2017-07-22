@@ -1,1 +1,42 @@
-titre: Billetterie en Lignesous_titre: Réservez vos billets en 3 clicsNb_billets: Nombre de billets désirésVous désirez: Vous désirezle: leaujourd'hui: aujourd'huitoute la journée: toute la journéel'après-midi: l'après-midi à partir de 14 heuresseul: seulaccompagné de : accompagné de1 personne: 1 personneSuivant: SuivantName: NomFirstname: PrénomBirthday: AnniversaireEmail: EmailBillets: BilletsBillet: BilletDate de la visite: Date de la visiteDurée: DuréeVous bénéficiez d'un tarif réduit: Vous bénéficiez d'un tarif réduitDate de naissance: Date de naissancePays: PayssendTo: Les billets seront envoyés à cette adresse dès validation du paiementtickname: Vos billets nominatifs:valable: Valable le %visitdate%reduction: Réductionprice: Tariftotal: Total de la commande %totalprice%paiement: Paiement par cartemerci: Merci pour votre commande !accept: Votre paiement a été validé, vous recevrez très prochainement vos billets à l'adresse mail indiquéeback: Retour à l'accueilreal:  Ce site est un site de test réalisé dans le cadre d’une formationnoticket: il n'est délivré aucun billet pour le Louvre via cette plateformedirector: Directeur de la publicationdev: Développementheb: Hébergementdroits: Droits à l'imagementions: Mentions Légalescoord: Vos coordonnéeswantvisit: Vous désirez visiter le Louvre le :
+titre: Billetterie en Ligne
+sous_titre: Réservez vos billets en 3 clics
+Nb_billets: Nombre de billets désirés
+Vous désirez: Vous désirez
+le: le
+aujourd'hui: aujourd'hui
+toute la journée: toute la journée
+l'après-midi: l'après-midi à partir de 14 heures
+seul: seul
+accompagné de : accompagné de
+1 personne: 1 personne
+Suivant: Suivant
+Name: Nom
+Firstname: Prénom
+Birthday: Anniversaire
+Email: Email
+Billets: Billets
+Billet: Billet
+Date de la visite: Date de la visite
+Durée: Durée
+Vous bénéficiez d'un tarif réduit: Vous bénéficiez d'un tarif réduit
+Date de naissance: Date de naissance
+Pays: Pays
+sendTo: Les billets seront envoyés à cette adresse dès validation du paiement
+tickname: Vos billets nominatifs:
+valable: Valable le %visitdate%
+reduction: Réduction
+price: Tarif
+total: Total de la commande %totalprice%
+paiement: Paiement par carte
+merci: Merci pour votre commande !
+accept: Votre paiement a été validé, vous recevrez très prochainement vos billets à l'adresse mail indiquée
+back: Retour à l'accueil
+real:  Ce site est un site de test réalisé dans le cadre d’une formation
+noticket: il n'est délivré aucun billet pour le Louvre via cette plateforme
+director: Directeur de la publication
+dev: Développement
+heb: Hébergement
+droits: Droits à l'image
+mentions: Mentions Légales
+coord: Vos coordonnées
+wantvisit: Vous désirez visiter le Louvre le :

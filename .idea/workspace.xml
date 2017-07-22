@@ -36,6 +36,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/NbGraphics/AppTest.php" afterPath="$PROJECT_DIR$/src/Tests/NbGraphics/AppTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/NbGraphics/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/Tests/NbGraphics/Controller/DefaultControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/NbGraphics/Entity/BasketTest.php" afterPath="$PROJECT_DIR$/src/Tests/NbGraphics/Entity/BasketTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/NbGraphics/Services/PricingTest.php" afterPath="$PROJECT_DIR$/src/Tests/NbGraphics/Services/PricingTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -574,7 +578,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -683,12 +691,12 @@
       <workItem from="1499057323926" duration="73092000" />
       <workItem from="1500272970883" duration="21705000" />
       <workItem from="1500466007858" duration="29842000" />
-      <workItem from="1500637100846" duration="21654000" />
+      <workItem from="1500637100846" duration="21920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344959000" />
+    <option name="totallyTimeSpent" value="345225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1423" height="873" extended-state="0" />

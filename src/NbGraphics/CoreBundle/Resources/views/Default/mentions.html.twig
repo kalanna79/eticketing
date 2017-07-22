@@ -1,1 +1,33 @@
-{% extends "::layout.html.twig" %}{% block body %}<div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight"><h4>{{ 'real' |trans }}. {{ 'noticket' |trans }}</h4>    <div class="panel panel-default">    <table class="table table-hover">        <th>{{ 'director' |trans }}</th>        <td>Musée du Louvre</td>        </tr>        <tr>            <th>{{ 'dev'|trans }}</th>            <td><a href="mailto:natacha@boudetnature.com">Natacha NOEL</a></td>        </tr>        <tr>            <th>{{ 'heb' | trans }}</th>            <td><a href="www.o2switch.fr"> o2switch</a></td>        </tr>        <tr>        <tr>            <th>{{ 'droits' | trans }}</th>            <td>                <a href="http://pixabay.com">Pixabay</a>            </td>        </tr>    </table></div></div>{% endblock %} 
+{% extends "::layout.html.twig" %}
+
+{% block body %}
+<div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight">
+
+<h4>{{ 'real' |trans }}. {{ 'noticket' |trans }}</h4>
+    
+<div class="panel panel-default">
+    <table class="table table-hover">
+        <th>{{ 'director' |trans }}</th>
+        <td>Musée du Louvre</td>
+        </tr>
+        <tr>
+            <th>{{ 'dev'|trans }}</th>
+            <td><a href="mailto:natacha@boudetnature.com">Natacha NOEL</a></td>
+        </tr>
+        <tr>
+            <th>{{ 'heb' | trans }}</th>
+            <td><a href="www.o2switch.fr"> o2switch</a></td>
+        </tr>
+        <tr>
+        <tr>
+            <th>{{ 'droits' | trans }}</th>
+            <td>
+                <a href="http://pixabay.com">Pixabay</a>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+
+{% endblock %}
+ 

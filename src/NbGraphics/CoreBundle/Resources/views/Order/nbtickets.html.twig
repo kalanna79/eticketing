@@ -1,1 +1,28 @@
-{% extends "::layout.html.twig" %}{% block body %}    <div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight">                <h3>{{ 'Nb_billets'|trans }} </h3>                        {{ form_start(form3, {'attr': {'class': '', 'role': 'form'}}) }}        <div class="row form-group">            <div class="col-md-12">                {{ form_row(form3.choiceNb, {'label': 'Vous désirez'}) }}            </div>        </div>        <div class="row form-group">            <div class="col-md-12">                {{  form_row(form3.NbBillets, {'label': ' '}) }}            </div>                        <div class="col-md-4 col-md-push-4">                {{ form_row(form3.suivant) }}            </div>        </div>        {{  form_end(form3) }}        </div>{%  endblock %} 
+{% extends "::layout.html.twig" %}
+
+{% block body %}
+    <div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight">
+        
+        <h3>{{ 'Nb_billets'|trans }} </h3>
+        
+        
+        {{ form_start(form3, {'attr': {'class': '', 'role': 'form'}}) }}
+        <div class="row form-group">
+            <div class="col-md-12">
+                {{ form_row(form3.choiceNb, {'label': 'Vous désirez'}) }}
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-12">
+                {{  form_row(form3.NbBillets, {'label': ' '}) }}
+            </div>
+            
+            <div class="col-md-4 col-md-push-4">
+                {{ form_row(form3.suivant) }}
+            </div>
+        </div>
+        {{  form_end(form3) }}
+    
+    </div>
+{%  endblock %}
+ 

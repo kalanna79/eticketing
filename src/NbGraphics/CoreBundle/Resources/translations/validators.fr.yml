@@ -1,1 +1,7 @@
-duration: "Il est trop tard pour sélectionner un billet Journée pour aujourd'hui."day: "Vous ne pouvez pas sélectionner une date antérieure à aujourd'hui."billet: "Il n'y a plus de billets disponibles pour aujourd'hui. Veuillez sélectionner une autre date."
+duration: "Il est trop tard pour sélectionner un billet Journée pour aujourd'hui."
+
+day: "Vous ne pouvez pas sélectionner une date antérieure à aujourd'hui."
+
+billet: "Il n'y a plus de billets disponibles pour aujourd'hui. Veuillez sélectionner une autre date."
+
+
