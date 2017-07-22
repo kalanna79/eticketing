@@ -6,13 +6,29 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/PaymentController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/PaymentController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/DependencyInjection/Configuration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/DependencyInjection/NbGraphicsCoreExtension.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/DependencyInjection/NbGraphicsCoreExtension.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/BasketType.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/BasketType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/NbTicketsType.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/NbTicketsType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/NbGraphicsCoreBundle.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/NbGraphicsCoreBundle.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/TicketRepository.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/TicketRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.en.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.fr.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.fr.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.en.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.fr.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.fr.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/mentions.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/mentions.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Emails/confirmation.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Emails/confirmation.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/confirm.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/confirm.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/nbtickets.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/nbtickets.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Payment.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Payment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Pricing.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Pricing.php" />
@@ -20,10 +36,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/NbGraphics/AppTest.php" afterPath="$PROJECT_DIR$/src/Tests/NbGraphics/AppTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/NbGraphics/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/Tests/NbGraphics/Controller/DefaultControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/NbGraphics/Entity/BasketTest.php" afterPath="$PROJECT_DIR$/src/Tests/NbGraphics/Entity/BasketTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/NbGraphics/Services/PricingTest.php" afterPath="$PROJECT_DIR$/src/Tests/NbGraphics/Services/PricingTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -80,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+              <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -126,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TicketType.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TicketType.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
@@ -136,11 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasketRepository.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BasketRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -218,8 +230,8 @@
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/BasketType.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/NbTicketsType.php" />
-        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php" />
+        <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php" />
       </list>
     </option>
   </component>
@@ -575,7 +587,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="SearchEverywhereHistoryKey" value="line&#9;ACTION&#9;GotoLine" />
+    <property name="SearchEverywhereHistoryKey" value="lin&#9;ACTION&#9;EditorDeleteToLineEnd&#10;line&#9;ACTION&#9;GotoLine" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -671,12 +683,12 @@
       <workItem from="1499057323926" duration="73092000" />
       <workItem from="1500272970883" duration="21705000" />
       <workItem from="1500466007858" duration="29842000" />
-      <workItem from="1500637100846" duration="20911000" />
+      <workItem from="1500637100846" duration="21654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344216000" />
+    <option name="totallyTimeSpent" value="344959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1423" height="873" extended-state="0" />
@@ -1070,7 +1082,7 @@
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1094,7 +1106,7 @@
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1131,18 +1143,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php">
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="373">
+          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
           <folding />
         </state>
       </provider>
