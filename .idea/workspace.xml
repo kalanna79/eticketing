@@ -2,22 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a17605c4-b46e-4c33-97f6-378e8e3171ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppCache.php" afterPath="$PROJECT_DIR$/app/AppCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/PaymentController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/PaymentController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/DependencyInjection/Configuration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/DependencyInjection/NbGraphicsCoreExtension.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/DependencyInjection/NbGraphicsCoreExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/BasketType.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/BasketType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/NbTicketsType.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/NbTicketsType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/NbGraphicsCoreBundle.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/NbGraphicsCoreBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/TicketRepository.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/TicketRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.en.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.fr.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/messages.fr.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.en.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.fr.yml" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/translations/validators.fr.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/mentions.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Default/mentions.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Emails/confirmation.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Emails/confirmation.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/confirm.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/confirm.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/nbtickets.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/nbtickets.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/order.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/views/Order/recap.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Payment.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Payment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Pricing.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Pricing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValid.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValid.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/IsDayValidValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValid.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php" afterPath="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/NumberTicketsValidValidator.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,101 +59,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/DefaultController.php">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/OrderController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/PaymentController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecapController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Controller/RecapController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Basket.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Basket.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="265" column="1" lean-forward="false" selection-start-line="265" selection-start-column="1" selection-end-line="265" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ticket.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Entity/Ticket.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="398" column="1" lean-forward="false" selection-start-line="398" selection-start-column="1" selection-end-line="398" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasketType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/BasketType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NbTicketsType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/NbTicketsType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicketType.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasketRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            <state relative-caret-position="-1841">
+              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -180,7 +109,6 @@
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/isDayValidValidator.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Validator/Constraints/numberTicketsValid.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/web/assets/sass/bootstrap/_variables.scss" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Services/Booking.php" />
@@ -214,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/NbTicketsType.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php" />
         <option value="$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
       </list>
     </option>
   </component>
@@ -229,7 +158,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1423" />
+    <option name="width" value="1018" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -289,6 +218,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -538,7 +495,101 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eticketing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -647,26 +698,26 @@
       <workItem from="1499057323926" duration="73092000" />
       <workItem from="1500272970883" duration="21705000" />
       <workItem from="1500466007858" duration="29842000" />
-      <workItem from="1500637100846" duration="23416000" />
+      <workItem from="1500637100846" duration="24459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346721000" />
+    <option name="totallyTimeSpent" value="347764000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1423" height="873" extended-state="0" />
+    <frame x="0" y="23" width="1018" height="873" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24692252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34938523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.45401883" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.45594263" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992503" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.4815351" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.54598117" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.54405737" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -731,14 +782,6 @@
     <entry file="file://$PROJECT_DIR$/web/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/var/SymfonyRequirements.php">
@@ -1107,6 +1150,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Repository/BasketRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1115,10 +1166,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NbGraphics/CoreBundle/Form/Type/TicketType.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        <state relative-caret-position="-1841">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding />
         </state>
       </provider>
