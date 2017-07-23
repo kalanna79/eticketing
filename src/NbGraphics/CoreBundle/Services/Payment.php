@@ -42,7 +42,7 @@
     
             \Stripe\Stripe::setApiKey("sk_test_tVpqFhaPaWWOPOkhtc3rnxg5");
     
-            $token = $token = $request->request->get('stripeToken');
+            $token = $request->request->get('stripeToken');
     
             try {
                 \Stripe\Charge::create(array(
