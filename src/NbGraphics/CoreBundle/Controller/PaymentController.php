@@ -14,24 +14,20 @@
     
     class PaymentController extends Controller
     {
-        
         public function checkoutAction(Request $request)
         {
             $basket = $this->get('nb_graphics_core.payment')->setCheckout($request);
-            
-            if ($basket === true)
-            {
+        
+            if ($basket === true) {
                 $this->addFlash("success", "Votre paiment a bien été accepté, votre commande est confirmée");
-    
+            
                 $session = $request->getSession();
-               $session->invalidate();
+                $session->invalidate();
                 return $this->render("NbGraphicsCoreBundle:Order:confirm.html.twig", array('basket' => $basket));
-    
             } else {
                 $this->addFlash("error", "Votre paiement a échoué, veuillez recommencer");
                 return $this->redirectToRoute('recap');
             }
-            
         }
     }
-      
+            
