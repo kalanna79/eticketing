@@ -24,4 +24,4 @@
          return 'nb_core_numbertickets';
      }
     }
-     
+      
