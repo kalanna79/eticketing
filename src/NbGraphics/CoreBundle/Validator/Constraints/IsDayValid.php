@@ -25,5 +25,4 @@
          return 'nb_core_holidays';
      }
     }
-    
-      
+     
