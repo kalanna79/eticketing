@@ -5,7 +5,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "NbGraphics\\": "src/NbGraphics"
         },
         "classmap": [
             "app/AppKernel.php",
@@ -72,3 +72,4 @@
         "branch-alias": null
     }
 }
+

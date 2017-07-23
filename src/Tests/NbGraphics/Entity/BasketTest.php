@@ -23,3 +23,4 @@
          $this->assertEquals(3, $basket->getTickets());
         }
     }
+    
