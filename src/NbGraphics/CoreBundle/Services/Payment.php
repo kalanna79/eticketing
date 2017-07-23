@@ -89,6 +89,3 @@
             $this->mailer->send($message);
         }
     }
-       
-    
-    
