@@ -1,60 +1,60 @@
-{% extends "::layout.html.twig" %}
 
-{% block body %}
-    </div>
+                                    
+                                    <a href="{{ path('index') }}">
+                                        <div class="img">
+                                            
+                                            <img src="{{ absolute_url(asset('assets/images/louvre-760.jpg')) }}" srcset="{{ absolute_url(asset('assets/images/louvre-320.jpg')) }} 320w,{{ absolute_url(asset('assets/images/louvre-640.jpg')) }} 640vw" sizes="35vw" alt="Logo du Louvre">
+                                        </div>
+                                    </a>
+                                <h1>{{ 'sous_titre'|trans }}</h1>
+                            </div>
+                        </div>
         
-        <div class="col-md-5 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
-            <div class="tab">
+                    <div>
+                                    <h3>Récapitulatif de votre commande n° {{ order.id }}</h3>
+                                    
+                                    <div >
+                                        Vous désirez {{ order.tickets|length }} billets pour visiter le musée
+                                        {% for ticket in order.tickets %}
+                                            {% if ticket.visitdate|date('d-m-Y') == 'now'|date('d-m-Y') %} aujourd'hui.
+                                            {% else %} le {{ ticket.visitdate|date('d-m-Y') }}.
+                                            {% endif %}
+                                        {%  endfor %}
+                                    <hr >
+                                        <h4>Vos coordonnées :</h4>
+                                        <div class="col-md-6">Nom :</div><div class="col-md-6">{{ order.name }}</div>
+                                        <div class="col-md-6">Prénom :</div><div class="col-md-6">{{ order.firstname }}</div>
+                                        <div class="col-md-6">email :</div><div class="col-md-6">{{ order.email }}</div>
+                                    </div>
+                                        <h4>Vos billets :</h4>
+                                    {% for ticket in order.tickets %}
+                                        <div class="row">
+                                            <div class="col-md-6">N° :</div><div class="col-md-6">{{ ticket.code }}</div>
+                                            <div class="col-md-6">Nom :</div><div class="col-md-6">{{ ticket.name }}</div>
+                                            <div class="col-md-6">Prénom :</div><div class="col-md-6">{{ ticket.firstname }}</div>
+                                            <div class="col-md-6"> Date de visite :</div>
+                                            <div class="col-md-6">{{ ticket.visitdate |date ('d-m-Y')}}</div>
+                                                <div class="col-md-6">
+                                                    Durée :
+                                                </div>
+                                                <div class="col-md-6">
+                                                    {%  if ticket.duration == 1 %}
+                                                        Journée
+                                                    {% else %}
+                                                        Demi-Journée (entrée à partir de 14 heures)
+                                                    {% endif %}
+                                                </div>
                 
-                <div class="tab-content">
-                    <div class="tab-content-inner active" data-content="signup">
-                        <h3>Récapitulatif de votre commande n° {{ order.id }}</h3>
-                        
-                        <div class="row">
-                            Vous désirez {{ order.tickets|length }} billets pour visiter le musée
-                            {% for ticket in order.tickets %}
-                                {% if ticket.visitdate|date('d-m-Y') == 'now'|date('d-m-Y') %} aujourd'hui.
-                                {% else %} le {{ ticket.visitdate|date('d-m-Y') }}.
-                                {% endif %}
-                            {%  endfor %}
-                        </div>
-                        <div class="row">
-                            <h4>Vos coordonnées :</h4>
-                            <div class="col-md-6">Nom :</div><div class="col-md-6">{{ order.name }}</div>
-                            <div class="col-md-6">Prénom :</div><div class="col-md-6">{{ order.firstname }}</div>
-                            <div class="col-md-6">email :</div><div class="col-md-6">{{ order.email }}</div>
-                        </div>
-                            <h4>Vos billets :</h4>
-                        {% for ticket in order.tickets %}
-                            <div class="row">
-                                <div class="col-md-6">N° :</div><div class="col-md-6">{{ ticket.code }}</div>
-                                <div class="col-md-6">Nom :</div><div class="col-md-6">{{ ticket.name }}</div>
-                            <div class="col-md-6">Prénom :</div><div class="col-md-6">{{ ticket.firstname }}</div>
-                                <div class="col-md-6"> Date de visite :</div><div class="col-md-6">{{ ticket
-                                    .visitdate |date ('d-m-Y')}}
-                                    <div class="col-md-6">Durée :</div><div class="col-md-6">
-                                        {%  if ticket.duration == 1 %}
-                                            Journée
-                                            {% else %}
-                                                Demi-Journée (entrée à partir de 14 heures)
-                                                {% endif %}
-                            <div class="col-md-6">Tarif</div><div class="col-md-6">{{ ticket.price
-                                }} €</div>
-                        </div>
-                        {%  endfor %}
-                        <h4>Total : {{ order.total }}€</h4>
-
-                    </div>
+                                            <div class="col-md-6">Tarif</div>
+                                            <div class="col-md-6">{{ ticket.price }} €</div>
+                                        </div>
+                                    {%  endfor %}
+                                    <h4>Total : {{ order.total }}€</h4>
+            
+                                 </div>
+                            
+        <div class="row footer">
+            <div class="col-md-12">
+                Copyright Louvre 2017
+            </div>
         </div>
-    </div>
-    
-    </div>
-    
-    
-    </div>
-    </div>
-    </div>
-    </header>
-{%  endblock %}
- 
-
