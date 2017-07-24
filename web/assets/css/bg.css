@@ -12,6 +12,9 @@
 		top: 0;
 		width: 100%;
 		z-index: 1;
+		background-image: url("../images/louvre1280.jpg");
+		-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+		background-size: cover;
 	}
 
 		#bg div {
