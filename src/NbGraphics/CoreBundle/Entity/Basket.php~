@@ -4,6 +4,7 @@ namespace NbGraphics\CoreBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Basket
@@ -14,7 +15,8 @@ use Doctrine\ORM\Mapping as ORM;
 class Basket
 {
     /**
-     * @ORM\OneToMany(targetEntity="NbGraphics\CoreBundle\Entity\Ticket", mappedBy="ticket")
+     * @ORM\OneToMany(targetEntity="NbGraphics\CoreBundle\Entity\Ticket", mappedBy="basket", cascade={"persist"})
+     * @Assert\Valid()
      */
     private $tickets;
     
@@ -31,6 +33,7 @@ class Basket
      * @var string
      *
      * @ORM\Column(name="firstname", type="string", length=255)
+     * @Assert\Length(min=3)
      */
     private $firstname;
 
@@ -38,6 +41,7 @@ class Basket
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     * @Assert\Length(min=3)
      */
     private $name;
 
@@ -45,6 +49,7 @@ class Basket
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255)
+     * @Assert\Email()
      */
     private $email;
 
@@ -56,22 +61,19 @@ class Basket
     private $status;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="total", type="decimal", precision=5, scale=2)
+     * @ORM\Column(name="total", type="integer")
      */
     private $total;
     
     /**
-     * @var number
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_created", type="datetime")
      */
-    private $NbBillets;
+    private $date_created;
     
-    
-    /**
-     * @var number
-     */
-    private $choiceNb;
     
     /**
      * Basket constructor.
@@ -79,7 +81,7 @@ class Basket
     public function __construct()
     {
         $this->tickets = new ArrayCollection();
-        $this->total = 0;
+        $this->setStatus('en cours');
     }
     /**
      * Get id
@@ -190,7 +192,7 @@ class Basket
     /**
      * Set total
      *
-     * @param string $total
+     * @param integer $total
      *
      * @return Basket
      */
@@ -205,7 +207,7 @@ class Basket
     /**
      * Get total
      *
-     * @return string
+     * @return integer
      */
     public function getTotal()
     {
@@ -237,44 +239,34 @@ class Basket
     }
     
     /**
-     * @param mixed $NbBillets
+     * Add a new ticket in basket
+     * @param \NbGraphics\CoreBundle\Entity\Ticket $ticket
      */
-    public function setNbBillets($NbBillets)
-    {
-        $this->NbBillets = $NbBillets;
-    }
-    
-    /**
-     * @return mixed
-     */
-    public function getNbBillets()
-    {
-        return $this->NbBillets;
-    }
-    
-    /**
-     * @param number $choiceNb
-     */
-    public function setChoiceNb($choiceNb)
-    {
-        $this->choiceNb = $choiceNb;
-    }
-    
-    public function getChoiceNb()
-    {
-        return $this->choiceNb;
-    }
-    
-   
     public function addTicket(Ticket $ticket)
     {
         $this->tickets->add($ticket);
     }
     
+    /**
+     * Remove a ticket from basket
+     * @param \NbGraphics\CoreBundle\Entity\Ticket $ticket
+     */
     public function removeTicket(Ticket $ticket)
     {
         $this->tickets->remove($ticket);
     }
     
-    
+    /**
+     * Allow to construct the array of tickets in basket
+     * @param $tickets
+     */
+    public function createTickets($tickets)
+    {
+        
+        foreach ($tickets as $ticket)
+        {
+            $ticket->setBasket($this);
+            $this->addTicket($ticket);
+        }
+    }
 }

@@ -67,6 +67,13 @@ class Basket
      */
     private $total;
     
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_created", type="datetime", nullable=true)
+     */
+    private $date_created;
+    
     
     /**
      * Basket constructor.
@@ -74,6 +81,7 @@ class Basket
     public function __construct()
     {
         $this->tickets = new ArrayCollection();
+        $this->date_created = new \DateTime();
         $this->setStatus('en cours');
     }
     /**
@@ -262,5 +270,28 @@ class Basket
             $this->addTicket($ticket);
         }
     }
+
+    /**
+     * Set dateCreated
+     *
+     * @param \DateTime $dateCreated
+     *
+     * @return Basket
+     */
+    public function setDateCreated($dateCreated)
+    {
+        $this->date_created = $dateCreated;
+
+        return $this;
+    }
+
+    /**
+     * Get dateCreated
+     *
+     * @return \DateTime
+     */
+    public function getDateCreated()
+    {
+        return $this->date_created;
+    }
 }
-  
