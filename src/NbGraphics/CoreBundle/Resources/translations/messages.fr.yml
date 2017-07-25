@@ -1,7 +1,7 @@
 titre: Billetterie en Ligne
 sous_titre: Réservez vos billets en 3 clics
 Nb_billets: Nombre de billets désirés
-Vous désirez: Vous désirez
+Vous désirez: Vous désirez venir
 le: le
 aujourd'hui: aujourd'hui
 toute la journée: toute la journée
@@ -12,7 +12,7 @@ accompagné de : accompagné de
 Suivant: Suivant
 Name: Nom
 Firstname: Prénom
-Birthday: Anniversaire
+Birthday: Né JJ-MM-YYYY
 Email: Email
 Billets: Billets
 Billet: Billet

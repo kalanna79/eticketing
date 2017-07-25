@@ -27,6 +27,11 @@ class NbTicketsType extends AbstractType
                     '2 personnes' => '3',
                     '3 personnes' => '4',
                     '4 personnes' => '5',
+                    '5 personnes' => '6',
+                    '6 personnes' => '7',
+                    '7 personnes' => '8',
+                    '8 personnes' => '9',
+                    '9 personnes' => '10'
                 )
             ))
             ->add('suivant', SubmitType::class);
