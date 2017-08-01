@@ -23,7 +23,8 @@ class TicketType extends AbstractType
                 ->add('birthday',   DateType::class, array(
                     'widget' => 'single_text',
                     'format' => 'dd-MM-yyyy',
-                    'label'  => 'Date de naissance'
+                    'label'  => 'Date de naissance',
+                    'invalid_message' => "date_birth"
                 ))
                 ->add('country',    CountryType::class, array(
                     'preferred_choices' => array('FR'),

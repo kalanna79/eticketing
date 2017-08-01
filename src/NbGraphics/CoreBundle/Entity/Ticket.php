@@ -51,7 +51,10 @@ class Ticket
      * @var \DateTime
      *
      * @ORM\Column(name="Birthday", type="datetime")
-     * @Assert\DateTime()
+     * @Assert\DateTime(
+    format="dd-MM-YYYY",
+    message="Le format de la date doit être dd-MM-YYYY"
+    )
      */
     private $birthday;
 
@@ -287,6 +290,16 @@ class Ticket
     {
         return $this->price;
     }
+    
+    public function setReduction($reduction)
+    {
+        $this->reduction = $reduction;
+    }
+    
+    public function getReduction()
+    {
+        return $this->reduction;
+    }
 
     
     /**
@@ -311,16 +324,6 @@ class Ticket
     public function getBasket()
     {
         return $this->basket;
-    }
-    
-    public function setReduction($reduction)
-    {
-        $this->reduction = $reduction;
-    }
-    
-    public function getReduction()
-    {
-        return $this->reduction;
     }
     
     /** set the random code

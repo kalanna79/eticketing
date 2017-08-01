@@ -5,3 +5,6 @@ day: "You can not select an earlier date. Please, select another date."
 holiday: "The museum is closed on this day, please select another date."
 
 billet: "There are no tickets available for today. Please select another date."
+
+date_birth: "Please enter the date like this : dd-mm-aaaa"
+

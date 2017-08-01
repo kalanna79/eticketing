@@ -4,4 +4,6 @@ day: "Vous ne pouvez pas sélectionner une date antérieure à aujourd'hui."
 
 billet: "Il n'y a plus de billets disponibles pour aujourd'hui. Veuillez sélectionner une autre date."
 
+holiday: "Le musée est fermé ce jour-là, merci de sélectionner une autre date."
 
+date_birth: "Le format demandé est dd-mm-aaaa"
