@@ -42,3 +42,14 @@ coord: Vos coordonnées
 wantvisit: Vous désirez visiter le Louvre le :
 your_order: Votre commande
 reduc: Un justificatif vous sera demandé à l'entrée.
+tarifs: Tarifs
+open: Le musée est ouvert tous les jours, sauf le mardi et les jours fériés.
+pholidays: Attention, vous ne pouvez faire de réservation de billets par la billetterie en ligne pour les dimanches.
+dayrate: Tarifs Journée
+normal: Normal (à partir de 12 ans)
+child: Enfant (de 4 à 12 ans)
+senior: Senior (à partir de 60 ans)
+reduced: Réduit (sur justificatif, étudiant, employé du musée, d’un service du Ministère de la Culture, militaire…)
+babyentry:  Les enfants de moins de 4 ans peuvent accéder gratuitement au musée.
+halfticket: Les billets Demi-journée sont valables à partir de 14 heures.
+

@@ -21,5 +21,11 @@ class DefaultController extends Controller
         $content = $this->get('templating')->render('NbGraphicsCoreBundle:Default:mentions.html.twig');
         return new Response($content);
     }
+    
+    public function tarifsAction()
+    {
+        $content = $this->get('templating')->render('NbGraphicsCoreBundle:Default:tarifs.html.twig');
+        return new Response($content);
+    }
 }
  

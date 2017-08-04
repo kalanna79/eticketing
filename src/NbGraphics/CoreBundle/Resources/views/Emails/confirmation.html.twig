@@ -1,60 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ 'titre'|trans }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="eticketing Louvre - an OpenClassRooms project" />
+    <meta name="keywords" content="project, symfony3, eticketing, Louvre, OpenClassRooms" />
+    <meta name="author" content="Natacha NOEL" />
+    <style type="text/css">
+        /* Fonts and Content */
+        body, td { font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size:14px; }
+        body { background-color: #000000; margin: 0; padding: 0; -webkit-text-size-adjust:none;
+            -ms-text-size-adjust:none; }
+        h2{ padding-top:12px; color:#0E7693; font-size:22px; }
+    
+    </style>
+</head>
 
-                                    
-                                    <a href="{{ path('index') }}">
-                                        <div class="img">
-                                            
-                                            <img src="{{ absolute_url(asset('assets/images/louvre-760.jpg')) }}" srcset="{{ absolute_url(asset('assets/images/louvre-320.jpg')) }} 320w,{{ absolute_url(asset('assets/images/louvre-640.jpg')) }} 640vw" sizes="35vw" alt="Logo du Louvre">
-                                        </div>
-                                    </a>
-                                <h1>{{ 'sous_titre'|trans }}</h1>
-                            </div>
-                        </div>
-        
-                    <div>
-                                    <h3>Récapitulatif de votre commande n° {{ order.id }}</h3>
-                                    
-                                    <div >
-                                        Vous désirez {{ order.tickets|length }} billets pour visiter le musée
-                                        {% for ticket in order.tickets %}
-                                            {% if ticket.visitdate|date('d-m-Y') == 'now'|date('d-m-Y') %} aujourd'hui.
-                                            {% else %} le {{ ticket.visitdate|date('d-m-Y') }}.
-                                            {% endif %}
-                                        {%  endfor %}
-                                    <hr >
-                                        <h4>Vos coordonnées :</h4>
-                                        <div class="col-md-6">Nom :</div><div class="col-md-6">{{ order.name }}</div>
-                                        <div class="col-md-6">Prénom :</div><div class="col-md-6">{{ order.firstname }}</div>
-                                        <div class="col-md-6">email :</div><div class="col-md-6">{{ order.email }}</div>
-                                    </div>
-                                        <h4>Vos billets :</h4>
-                                    {% for ticket in order.tickets %}
-                                        <div class="row">
-                                            <div class="col-md-6">N° :</div><div class="col-md-6">{{ ticket.code }}</div>
-                                            <div class="col-md-6">Nom :</div><div class="col-md-6">{{ ticket.name }}</div>
-                                            <div class="col-md-6">Prénom :</div><div class="col-md-6">{{ ticket.firstname }}</div>
-                                            <div class="col-md-6"> Date de visite :</div>
-                                            <div class="col-md-6">{{ ticket.visitdate |date ('d-m-Y')}}</div>
-                                                <div class="col-md-6">
-                                                    Durée :
-                                                </div>
-                                                <div class="col-md-6">
-                                                    {%  if ticket.duration == 1 %}
-                                                        Journée
-                                                    {% else %}
-                                                        Demi-Journée (entrée à partir de 14 heures)
-                                                    {% endif %}
-                                                </div>
-                
-                                            <div class="col-md-6">Tarif</div>
-                                            <div class="col-md-6">{{ ticket.price }} €</div>
-                                        </div>
-                                    {%  endfor %}
-                                    <h4>Total : {{ order.total }}€</h4>
+<body>
+    <table>
+        <tr>
+            <td width="640" height="10"></td>
+        </tr>
+    </table>
+  <table width="80%" cellpadding="0" cellspacing="0" border="0" style="bgcolor:#EFEFEF" align="center">
+      <tr>
+          <td bgcolor="#EFEFEF" align="center" width="640">
+            <a href="{{ path('index') }}">
+                    <img src="{{ absolute_url(asset('assets/images/louvre-760.jpg')) }}" srcset="{{ absolute_url(asset('assets/images/louvre-320.jpg')) }} 320w,{{ absolute_url(asset('assets/images/louvre-640.jpg')) }} 640vw" sizes="35vw" alt="Logo du Louvre" align="center">
+            </a>
+          </td>
+      </tr>
+      <tr>
+          <td width="640" height="10"  bgcolor="#EFEFEF"></td>
+      </tr>
+      <tr>
+          <td bgcolor="#EFEFEF" width="640">
+            <h3 style="color: #E56807" align="center">Récapitulatif de votre commande n° {{ order.id }}</h3>
             
-                                 </div>
-                            
-        <div class="row footer">
-            <div class="col-md-12">
-                Copyright Louvre 2017
-            </div>
-        </div>
+                Merci pour votre commande sur la billetterie en ligne du Louvre. Vous
+                trouverez vos billets ci-dessous. <br>
+Les billets sont nominatifs et incessibles. Si vous bénéficiez d'un tarif réduit, n'oubliez
+                pas de préparer votre pièce justificative. <br>
+Bonne visite !
+          <hr style="color: #E56807">
+              <h3 style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif; color:#E56807" align="center">Vos
+                                                                                                            billets :</h3>
+              <hr style="color: #E56807">
+          
+          {% for ticket in order.tickets %}
+                    <table width="80%">
+                        <tr>
+                            <td>N° :</td>
+                            <td>{{ ticket.code }}</td>
+                        </tr>
+                        <tr>
+                            <td>Nom :</td>
+                            <td>{{ ticket.name }}</td>
+                        </tr>
+                        <tr>
+                            <td>Prénom :</td>
+                            <td>{{ ticket.firstname }}</td>
+                        </tr>
+                        <tr>
+                            <td>Date de visite :</td>
+                            <td>{{ ticket.visitdate |date ('d-m-Y')}}</td>
+                        </tr>
+                        <tr>
+                            <td>Durée :</td>
+                            <td>{%  if ticket.duration == 1 %}
+                                    Journée
+                                {% else %}
+                                    Demi-Journée (entrée à partir de 14 heures)
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tarif :</td>
+                            <td>{{ ticket.price }} €</td>
+                        </tr>
+                    </table>
+              <hr style="color: #E56807">
+          {%  endfor %}
+                <h4 style="color: #E56807" align="center">Total : {{ order.total }}€</h4>
+          </td>
+      </tr>
+  </table>
+</body>
+</html>

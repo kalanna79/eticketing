@@ -1,0 +1,21 @@
+{% extends "::layout.html.twig" %}
+
+{% block body %}
+<div class="col-md-4 col-md-push-2 billet order animate-box" data-animate-effect="fadeInRight" style="padding-left: 5px; font-size: small">
+
+<h4>{{ 'tarifs' |trans }}</h4>
+         {{ 'open' |trans }}<br> {{ 'pholidays' | trans }}<br>
+        {{ 'dayrate'|trans }}:
+        <ul>
+            <li>Normal (à partir de 12 ans) : 16 €</li>
+            <li>{{ 'child' |trans }} : 8 €</li>
+            <li>{{ 'senior' |trans }} : 12€</li>
+            <li>{{ 'reduced' | trans }}: 10€</li>
+        </ul>
+        {{ 'babyentry'|trans }}<br>
+        {{ 'halfticket'|trans }}
+    </div>
+</div>
+
+{% endblock %}
+ 

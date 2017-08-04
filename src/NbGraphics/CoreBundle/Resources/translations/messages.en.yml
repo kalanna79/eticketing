@@ -45,5 +45,15 @@ coord: Your contact details
 wantvisit: You wish to visit the Louvre on:
 your_order: Your order
 reduc: A receipt will be asked at the entrance.
+tarifs: Prices
+open: The museum is open every day except Tuesday and public holidays.
+pholidays: Please note that tickets can not be booked through the online ticket office on Sundays.
+dayrate: Day rates
+normal: Normal (from age 12)
+child: Child (from 4 to 12 years)
+senior: Senior (from age 60)
+reduced: Reduced (on certificate, student, employee of the museum, a department of the Ministry of Culture, military ...)
+babyentry: Children under the age of 4 can enjoy free access to the museum.
+halfticket: Half-Day tickets are valid from 14 hours.
 
 

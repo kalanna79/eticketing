@@ -30,6 +30,10 @@ mentions:
     path:   /mentions
     defaults : { _controller: NbGraphicsCoreBundle:Default:mentions }
 
+tarifs:
+    path:   /tarifs
+    defaults : { _controller: NbGraphicsCoreBundle:Default:tarifs }
+
 setlocale:
     path:   /setlocale/{language}
     defaults: { _controller: NbGraphicsCoreBundle:Default:setLocale}

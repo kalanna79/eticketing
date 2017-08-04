@@ -5,10 +5,11 @@
         <div class="col-md-6" style="text-align: center"><a href="{{ path('nbtickets', app.request.get('_route_params')|merge
             ({'_locale':
                 'fr'})
-            ) }}">FR</a></div>
+            ) }}">FR</a>
+        <br>
+        </div>
         <div class="col-md-6" style="text-align: center"><a href="{{ path('nbtickets', app.request.get('_route_params')|merge({'_locale': 'en'}))
             }}">EN</a></div>
-    
     </div>
     
 {%  endblock %}
