@@ -38,15 +38,21 @@
     </div>
     
     
-    <div class="row animate-box" data-animate-effect="fadeInRight">
+    <div class="row animate-box" data-animate-effect="fadeInRight" id="mesBillets">
+        <div id="billets" >
         {% for ticket in form.tickets %}
     
-        <div class="col-md-12 billet">
+        <div class="col-md-12 billet" id="bill-n{{ loop.index }}" data-prototype="{{ form_widget(form.tickets.vars
+        .prototype)|e
+        ('html_attr') }}">
             <div class="row">
                 <div class="col-md-2">{{ 'Billet' |trans }} n°{{ loop.index }}</div>
                 <div class="col-md-2"> {{ 'wantvisit' |trans }}</div>
                 <div class="col-md-2">{{ form_widget(ticket.visitdate) }} {{ form_errors(ticket.visitdate) }}</div>
                 <div class="col-md-2">{{ form_widget(ticket.duration) }} {{ form_errors(ticket.duration) }}</div>
+                <div class="col-md-4" style="text-align: right"><a href="#" id="n{{ loop.index }}" class="btn
+                btn-default btn-xs
+                delete">Supprimer</a></div>
             </div>
             <hr>
             <div class="row">
@@ -68,12 +74,16 @@
                 <div class="col-md-3 col-md-push-1">
                     {{ form_widget(ticket.reduction) }}
                 </div>
+                
+
             </div>
         </div>
+
         {% endfor %}
+        </div>
     </div>
     
-    <div class="col-md-2 col-md-push-8">
+    <div class="col-md-2 col-md-push-4">
 
         {{ form_widget(form.Suivant) }}
         {{  form_end(form) }}
@@ -83,6 +93,8 @@
     </div>
     </div>
     </div>
+    
 {%  endblock %}
-  
+
+
 

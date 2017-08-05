@@ -23,6 +23,8 @@ class BasketType extends AbstractType
             ->add('email',      EmailType::class)
             ->add('tickets',    CollectionType::class, array(
                 'entry_type' => TicketType::class,
+                'allow_add' => true,
+                'allow_delete' => true
             ))
             ->add('Suivant',    SubmitType::class);
     }
