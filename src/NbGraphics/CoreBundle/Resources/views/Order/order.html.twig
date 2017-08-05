@@ -52,7 +52,7 @@
                 <div class="col-md-2">{{ form_widget(ticket.duration) }} {{ form_errors(ticket.duration) }}</div>
                 <div class="col-md-4" style="text-align: right"><a href="#" id="n{{ loop.index }}" class="btn
                 btn-default btn-xs
-                delete">Supprimer</a></div>
+                delete">{{ 'delete' | trans }}</a></div>
             </div>
             <hr>
             <div class="row">
